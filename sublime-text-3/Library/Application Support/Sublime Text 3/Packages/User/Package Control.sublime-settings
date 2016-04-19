@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoPEP8",
+		"BracketHighlighter",
+		"Dotfiles Syntax Highlighting",
+		"Package Control",
+		"Python Flake8 Lint",
+		"Python Imports Sorter",
+		"SideBarEnhancements"
+	]
+}

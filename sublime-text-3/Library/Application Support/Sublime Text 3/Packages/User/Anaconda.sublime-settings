@@ -1,0 +1,9 @@
+{
+    "enable_signatures_tooltip": false,
+
+    /*
+        If you set the following option as true, anaconda will display the
+        documentation of modules, classes or methods in a floating popup
+    */
+    "enable_docstrings_tooltip": false,
+}

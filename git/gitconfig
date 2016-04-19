@@ -1,0 +1,25 @@
+# Local/private config goes in the include
+[include]
+        path = ~/.gitconfig.local
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        excludesfile = ~/.gitignore
+        editor = subl -n -w
+[mergetool]
+        keepBackup = false
+[diff]
+        tool = diffmerge
+[difftool "diffmerge"]
+        cmd = diffmerge \"$LOCAL\" \"$REMOTE\"	
+[help]
+        autocorrect = 1
+[push]
+        # See `git help config` (search for push.default)
+        # for more information on different options of the below setting.
+        #
+        # Setting to git 2.0 default to suppress warning message
+        default = simple

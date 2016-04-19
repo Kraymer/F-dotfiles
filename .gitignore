@@ -1,3 +1,4 @@
 *local*
 */.stow-local-ignore
 .DS_Store
+bin/

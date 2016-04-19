@@ -18,8 +18,8 @@ bash magic.
 Power comes from its strict adhesion to the *Three Old Rules* :
 
     1. underbar rule: folders part of a stow package path starts with a `_`
-    2. nopub rule: files that shall be kept secret ends with `.nopub`
-    3. common rule: files located in a `common` folder are not stowed
+    2. local rule: files that shall be kept secret ends with `.local`
+    3. common rule: files located in the `/common` folder are not stowed
 
 Benefits
 --------
@@ -31,8 +31,8 @@ The rules might seem abstract but the benefits arte tangible :
 - *Simplicity*. Any dot file installation - may it be os or environment
   dependant - is just one `stow` command away. Type `stow _*` to install all
   packages.
-- *Transparency*. Same ignore patterns apply for all files tree: `*nopub` files
-  are not commited, `common/*` files are not stowed.
+- *Transparency*. Same ignore patterns apply for all files tree: `*local` files
+  are not commited, `/common/*` files are not stowed.
 - *Discoverability*. Type `_<TAB>` to browse through stow packages
   configurations.
 - *DRYability*. A configuration file spread across various locations on

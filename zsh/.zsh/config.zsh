@@ -1,3 +1,7 @@
+# Completion system
+autoload -U compinit
+compinit
+
 # ls colors
 eval `dircolors ~/.zsh/dircolors.256dark`
 
@@ -23,3 +27,7 @@ setopt NO_CASE_GLOB     # Case insensitive globbing
 setopt NO_LIST_BEEP
 setopt RM_STAR_WAIT     # 10 second wait if you do something that will delete everything
 
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/workspace
+source /usr/local/bin/virtualenvwrapper.sh

@@ -4,5 +4,7 @@
 export EDITOR=nano
 export PAGER=more
 
-PY_VERSION=`/usr/local/bin/python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))'`
+PY_VERSION=`python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))'`
 export PATH=$PATH:~/bin:/Users/flap/Library/Python/${PY_VERSION}/bin/
+
+export TERM="xterm-256color" 

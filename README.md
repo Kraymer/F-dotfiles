@@ -1,9 +1,7 @@
 _dotfiles
 =========
 
-GNU stow/.gitignore setup combo to easily deploy dotfiles while preserving sensitive data.
-
-[Ygritte meme](https://dl.dropboxusercontent.com/u/1026715/ygritte-meme.png)
+![Ygritte meme](https://dl.dropboxusercontent.com/u/1026715/ygritte-meme.png)
 
 No-fluff dotfiles setup based on [stow](https://taihen.org/managing-dotfiles-with-gnu-stow/), for free folks willing to go *beyond the dots*.
 

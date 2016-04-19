@@ -12,4 +12,4 @@ fi
 source ~/.oh_my.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/config.zsh
-source ~/.zsh/_functions.zsh
+source ~/.local/functions.zsh

@@ -12,29 +12,36 @@ Rings true? Then go read this [article](http://brandon.invergo.net/news/2012-05-
 _dotfiles
 ---------
 
-_dotfiles is a stow-based organization scheme for folks wary of advanced 
+_dotfiles is a stow-based organization scheme for folks wary of advanced
 bash magic.
 
 Power comes from its strict adhesion to the *Three Old Rules* :
 
     1. underbar rule: folders part of a stow package path starts with a `_`
     2. nopub rule: files that shall be kept secret ends with `.nopub`
-    3. common rule: files located in a `common` folder are not stowed 
+    3. common rule: files located in a `common` folder are not stowed
 
 Benefits
 --------
 
 The rules might seem abstract but the benefits arte tangible :
 
-- *Unity*. All configuration files in a single place yet distinction between 
-  classic vs stowable directory is made obvious with the `_` prefix.
-- *Simplicity*. Any dot file installation -- may it be os or environment 
-  dependant -- is just on `stow` command away. Type `stow _*` to install all 
+- *Unity*. All configuration folders lie in a single place yet distinction between
+  classic vs stowable folders is made obvious with the `_` prefix.
+- *Simplicity*. Any dot file installation - may it be os or environment
+  dependant - is just one `stow` command away. Type `stow _*` to install all
   packages.
-- *Transparency*. Same ignore patterns apply for all files tree: `*nopub` files 
+- *Transparency*. Same ignore patterns apply for all files tree: `*nopub` files
   are not commited, `common/* files are not stowed.
-- *Discoverability*. Type -<TAB> to browse through stow packages 
-  configurations.  
-- *DRYability*. A configuration file spread across various locations on 
+- *Discoverability*. Type `-<TAB>` to browse through stow packages
+  configurations.
+- *DRYability*. A configuration file spread across various locations on
   different OS has a single _dotfiles represention.
 
+FAQ
+---
+
+*Where to save a file that is installed at different locations depending on the
+OS ?*
+
+see ST3

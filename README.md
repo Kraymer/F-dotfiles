@@ -11,18 +11,18 @@ Naming rules
 
 Adopt these rules to get a *no surprises* folders hierarchy that scale.
 
-- any folder that is part of a stow package path must starts with -
-- private files must contain local to be filtered out by gitignore
+- any folder that is part of a stow package path must starts with `_`
+- private files must contain `local` to be filtered out by gitignore
 
 Benefits
 --------
 
-- Unity. All configuration files in a single place yet distinction between 
-  classic vs stowable directory is obvious with the - prefix.
-- Simplicity. Whether dot files to install depend of the os or environment, 
+- *Unity*. All configuration files in a single place yet distinction between 
+  classic vs stowable directory is obvious with the `-` prefix.
+- *Simplicity*. Whether dot files to install depend of the os or environment, 
   they are just one stow command away.
-- Discoverability. Type -<TAB> to browse through stow packages 
+- *Discoverability*. Type -<TAB> to browse through stow packages 
   configurations.  
-- DRYability: a configuration file spread across various locations on 
+- *DRYability*. A configuration file spread across various locations on 
   different OS has a single -dotfiles represention.
 

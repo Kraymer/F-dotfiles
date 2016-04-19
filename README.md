@@ -1,13 +1,13 @@
 Preamble
-========
+--------
 
 *"We do not stow"* -- House Greyjoy's motto
 
-Well you should, Reek. Chances are that ...
+Well, as a matter of fact, maybe you should, Reek.
 
 ![You dot know nothing about stow](https://dl.dropboxusercontent.com/u/1026715/ygritte-meme.png)
 
-... then go read this [article](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) that present it briefly.
+Rings true? Then go read this [article](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) that present it briefly.
 
 _dotfiles
 ---------
@@ -32,7 +32,7 @@ The rules might seem abstract but the benefits arte tangible :
   dependant -- is just on `stow` command away. Type `stow _*` to install all 
   packages.
 - *Transparency*. Same ignore patterns apply for all files tree: `*nopub` files 
-  are not commited, `common/*` files are not stowed.
+  are not commited, `common/* files are not stowed.
 - *Discoverability*. Type -<TAB> to browse through stow packages 
   configurations.  
 - *DRYability*. A configuration file spread across various locations on 

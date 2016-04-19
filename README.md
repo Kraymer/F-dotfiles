@@ -19,6 +19,6 @@ Install
 -------
 
 - run `git clone https://github.com/Kraymer/_dotfiles.git`
-- edit around
 - run `_dotfiles/configure.sh` to activate `.stow-local-ignore` packages files
   for your platform.
+- stow away!

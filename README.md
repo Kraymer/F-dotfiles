@@ -32,8 +32,8 @@ The rules might seem abstract but the benefits arte tangible :
   dependant - is just one `stow` command away. Type `stow _*` to install all
   packages.
 - *Transparency*. Same ignore patterns apply for all files tree: `*nopub` files
-  are not commited, `common/* files are not stowed.
-- *Discoverability*. Type `-<TAB>` to browse through stow packages
+  are not commited, `common/*` files are not stowed.
+- *Discoverability*. Type `_<TAB>` to browse through stow packages
   configurations.
 - *DRYability*. A configuration file spread across various locations on
   different OS has a single _dotfiles represention.

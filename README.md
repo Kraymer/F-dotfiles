@@ -6,7 +6,7 @@ Preamble
 Rings true?  
 Then, unless you re part of the Greyjoy<sup>1</sup> family, you should read this [article](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) that present it briefly.
 
-<sup>1</sup> *"[We do not stow"](https://scifi.stackexchange.com/questions/4222/what-does-house-greyjoys-motto-we-do-not-sow-mean)* -- House Greyjoy's motto
+<sup>1</sup> Obviously, not my intended audience. Reminder: *"[We do not stow"](https://scifi.stackexchange.com/questions/4222/what-does-house-greyjoys-motto-we-do-not-sow-mean)* -- House Greyjoy's motto
 
 _dotfiles
 ---------
@@ -16,14 +16,14 @@ bash magic.
 
 Power comes from its strict adhesion to the *Three Old Rules* :
 
-    1. underbar rule: folders part of a stow package path starts with a `_`
-    2. local rule: files that shall be kept secret ends with `.local`
+    1. underbar rule: folders part of a stow package path starts with a '_'
+    2. local rule: files that shall be kept secret ends with '.local'
     3. common rule: files located in the `/common` folder are not stowed
 
 Benefits
 --------
 
-The rules might seem abstract but the benefits arte tangible :
+The rules might seem abstract but the benefits are tangible :
 
 - *Unity*. All configuration folders lie in a single place yet distinction between
   classic vs stowable folders is made obvious with the `_` prefix.
@@ -36,6 +36,13 @@ The rules might seem abstract but the benefits arte tangible :
   configurations.
 - *DRYability*. A configuration file spread across various locations on
   different OS has a single _dotfiles represention.
+
+Install
+-------
+
+- `git clone https://github.com/Kraymer/_dotfiles.git`
+- edit env/platform specific packages to ignore in `/.stow-local-ignore`
+- stow 'em all, starting by stow: `stow _stow _*`
 
 FAQ
 ---

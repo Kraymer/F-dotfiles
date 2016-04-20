@@ -1,6 +1,7 @@
 # Completion system
 autoload -U compinit
 compinit
+_comp_options+=(globdots)	# auto-complete dot files
 
 # ls colors
 eval `dircolors ~/.zsh/dircolors.256dark`

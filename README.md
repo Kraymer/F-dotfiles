@@ -1,13 +1,12 @@
 Preamble
 --------
 
-*"We do not stow"* -- House Greyjoy's motto
-
-Well, as a matter of fact, maybe you should, Reek.
-
 ![You dot know nothing about stow](https://dl.dropboxusercontent.com/u/1026715/ygritte-meme.png)
 
-Rings true? Then go read this [article](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) that present it briefly.
+Rings true?  
+Then, unless you re part of the Greyjoy<sup>1</sup> family, you should read this [article](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) that present it briefly.
+
+<sup>1</sup> *"[We do not stow"](https://scifi.stackexchange.com/questions/4222/what-does-house-greyjoys-motto-we-do-not-sow-mean)* -- House Greyjoy's motto
 
 _dotfiles
 ---------

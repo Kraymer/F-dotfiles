@@ -1,1 +1,9 @@
-set const	# activate line numbering
+# syntax highlighting
+include /usr/share/nano/sh.nanorc
+include /usr/share/nano/python.nanorc
+include /usr/share/nano/tex.nanorc
+include /usr/share/nano/mutt.nanorc
+include /usr/share/nano/html.nanorc
+include /usr/share/nano/css.nanorc
+
+set const			# line numbering

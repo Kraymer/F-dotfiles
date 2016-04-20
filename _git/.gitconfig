@@ -23,3 +23,9 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+[alias]
+	last = log -1 HEAD
+	co = checkout
+	st = status
+	uncommit = reset --soft HEAD~
+	unstage = reset HEAD --

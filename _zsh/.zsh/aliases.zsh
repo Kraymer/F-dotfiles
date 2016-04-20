@@ -1,4 +1,5 @@
-alias atoolx='atool -x'
+alias atoolx='atool -x'		# extract any archive format
+alias cp='rsync -p'
 alias h=history
 alias l='ls -CF'
 alias la='ls -A'

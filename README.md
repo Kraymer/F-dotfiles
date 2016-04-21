@@ -23,7 +23,7 @@ Power comes from its strict adhesion to the *Three Old Rules* :
 Benefits
 --------
 
-Many tangible benefits arise from the application of these basic rules. 
+Benefits arise from the application of these basic rules. 
 Things become simple, transparent and DRY:
 
 - all configuration folders lie in a single place, yet distinction between
@@ -50,5 +50,5 @@ Create the part of the filepath that is common to the two OS in `/common`. Then 
 
 *How to keep a file secret when adding `local` to its name is not an option ?*
 
-Add a `/.gitignore` inside the containing package. It should be the exception though, whenever possible apply the *local rule* which is more explicit.  
+Add a `/.gitignore` inside the containing package. It should be the exception though, whenever possible apply the *[local rule](https://github.com/Kraymer/_dotfiles#_dotfiles)* which is more explicit.  
 *Example:* [qifqif package](https://github.com/Kraymer/_dotfiles/tree/master/_qifqif)

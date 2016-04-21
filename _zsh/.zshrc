@@ -10,7 +10,10 @@ then
 fi
 
 source ~/.oh_my.zsh
-source ~/.zsh/aliases.zsh
-source ~/.zsh/config.zsh
-source ~/.zsh/config_env.zsh
-source ~/.zsh/functions.zsh
+
+# load zsh config files
+config_files=(~/.zsh/**/*.zsh)
+for file in ${config_files}
+do
+  source $file
+done

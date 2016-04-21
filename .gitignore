@@ -1,4 +1,5 @@
 *local*
-*/.stow-local-ignore
 .DS_Store
+
+_qifqif/.qifqif.json
 bin/

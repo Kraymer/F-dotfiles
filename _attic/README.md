@@ -7,7 +7,7 @@ It introduces `attic_last_backup` that echo date of last successfull backup, so
 you get alerted at your shell start if something went haywire in your backup
 strategy.
 
-![attic last backup terminal info](https://dl.dropboxusercontent.com/u/1026715/github/_dotfiles/attic_prompt.jpg)
+![attic last backup terminal info](https://dl.dropboxusercontent.com/u/1026715/github/_dotfiles/attic_prompt.png)
 
     └── .zsh
         └── functions_attic.zsh

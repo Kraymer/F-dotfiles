@@ -6,8 +6,11 @@ export PAGER=more
 
 export PATH=$PATH:~/bin:/usr/local/bin
 
-# Add python3 bin path
-PY_VERSION=`python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))'`
-export PATH=$PATH:/Users/flap/Library/Python/${PY_VERSION}/bin/
+# load zsh config files
+env_config_files=(~/.zsh/**/*.zshenv)
+for file in ${env_config_files}
+do
+  source $file
+done
 
 export TERM="xterm-256color"

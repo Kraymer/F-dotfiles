@@ -1,7 +1,7 @@
 Preamble
 --------
 
-![You dot know nothing about stow](https://dl.dropboxusercontent.com/u/1026715/ygritte-meme.png)
+![You dot know nothing about stow](https://dl.dropboxusercontent.com/u/1026715/github/_dotfiles/ygritte-meme.jpg)
 
 Rings true?  
 Then, unless you re part of the Greyjoy<sup>1</sup> family, you should read this [article](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) that present it briefly.

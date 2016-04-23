@@ -1,7 +1,7 @@
 # Macbook specific setup
 
-    └── .zsh
-        └── local
-            ├── config.zshenv
-            ├── credentials.zsh
-            └── functions.zsh
+    ├── .zsh
+    │   └── local
+    │       ├── macbook-vars.zsh
+    │       └── macbook-vars.zshenv
+    └── gitconfig.local

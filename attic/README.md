@@ -1,5 +1,11 @@
 # [Attic](https://attic-backup.org/)
 
+This package defines a zsh wrapper function `attic_backup` that merges `create`
+and `prune` subcommands into a single execution: it makes sense to prune old
+archives after a successfull backup.
+It introduces `attic_last_backup` that echo date of last successfull backup, so
+you get alerted at your shell start if something went haywire in your backup
+strategy.
     .
     └── .zsh
         └── functions_attic.zsh

@@ -29,3 +29,7 @@
 	st = status
 	uncommit = reset --soft HEAD~
 	unstage = reset HEAD --
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f

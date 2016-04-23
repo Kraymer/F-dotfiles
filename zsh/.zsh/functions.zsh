@@ -5,3 +5,4 @@ TRAPALRM() {
         zle reset-prompt
     fi
 }
+

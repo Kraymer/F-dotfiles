@@ -13,6 +13,7 @@
 ### .oh_my.zsh
 
 Load zsh theme and plugins.
+Install powerlevel9k theme at https://github.com/bhilburn/powerlevel9k
 
 ### .zsh/config.zsh
 

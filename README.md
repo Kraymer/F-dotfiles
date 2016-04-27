@@ -8,37 +8,30 @@ Then, unless you re part of the Greyjoy<sup>1</sup> family, you should read this
 
 <sup>1</sup> not the intended audience here. Reminder: *"[We do not stow"](https://scifi.stackexchange.com/questions/4222/what-does-house-greyjoys-motto-we-do-not-sow-mean)* -- House Greyjoy's motto
 
-_dotfiles
----------
-
-_dotfiles is a stow-based organization scheme for folks wary of advanced
-bash magic.
-
-Power comes from its strict adhesion to the *Three Old Rules* :
-
-    1. underbar rule: folders part of a stow package path starts with a '_'
-    2. local rule: filenames that contain '.local' are kept secret (not commited)
-    3. common rule: files located in the `/common` folder are not stowed
-
-Benefits
---------
-
-Benefits arise from the application of these basic rules.
-Things become simple, transparent and DRY:
-
-- all configuration folders lie in a single place, yet distinction between
-  classic vs stowable folders is explicit with the `_` prefix.
-- any dot file installation - may it be os or environment dependant - is just one `stow` command away
-- `stow _*` to install all packages
-- same ignore patterns apply for all files tree: `*local*` files are not commited, `/common/*` files are not stowed.
-- a configuration file spread across various locations on different OS has a single _dotfiles representation.
-
 Install
 -------
 
-- `git clone https://github.com/Kraymer/_dotfiles.git`
-- edit env/platform specific packages to ignore in `/.stow-local-ignore`
-- stow 'em all, starting by stow: `stow _stow _*`
+- clone the repository : `git clone https://github.com/Kraymer/_dotfiles.git ~/`.
+  *Important:* it must be located in your $HOME for .stowrc files to work as
+  expected
+- `stow stow` first to install stow global ignore file
+- edit around and stow away
+
+Files naming conventions
+------------------------
+
+Few simple rules to make the nature of stow packages explicit :
+
+- lowercase for packages to install in `$HOME`
+- titlecase for packages to install as root in `/`
+- leading `@` for packages related to an environment
+- leading `_` for non packages
+
+Private files
+-------------
+
+Files that contain sensitive information and should not be published must
+contain *local* in their filename.
 
 FAQ
 ---

@@ -28,8 +28,8 @@ Few simple rules to make the nature of stow packages explicit :
   [`@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
 - leading `@` for packages related to an environment, eg
   [`@mac`](https://github.com/Kraymer/_dotfiles/blob/master/%40mac/)  
-  Used for subpackages too (ie a stowable directory located in `_dotfiles/*/`),
-  to help distinguish them from content of parent package, eg [`attic/`@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
+  Used for subpackages too (ie stowable directories located in `_dotfiles/*/`),
+  to help distinguish them from content of their parent package, eg [`attic/@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
 - leading `_` for non packages, eg [`_homebrew`](https://github.com/Kraymer/_dotfiles/blob/master/_homebrew)
 
 Private files

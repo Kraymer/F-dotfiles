@@ -21,19 +21,18 @@ Then, edit around and stow away!
 Files naming conventions
 ------------------------
 
+**Directories**
+
 Few simple rules to make the nature of stow packages explicit :
 
 - lowercase for packages to install in `$HOME`
 - titlecase for packages to install as root in `/`, eg
   [`@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
-- leading `@` for packages related to an environment, eg
-  [`@mac`](https://github.com/Kraymer/_dotfiles/blob/master/%40mac/)  
-  Used for subpackages too (ie stowable directories located in `_dotfiles/*/`),
-  to help distinguish them from content of their parent package, eg [`attic/@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
+- leading `@` for environment packages and subpackages, eg
+  [`@mac`](https://github.com/Kraymer/_dotfiles/blob/master/%40mac/), [`attic/@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
 - leading `_` for non packages, eg [`_homebrew`](https://github.com/Kraymer/_dotfiles/blob/master/_homebrew)
 
-Private files
--------------
+**Private files**
 
 Files that contain sensitive information and should not be published must
 contain *local* in their filename. They should be accompagnied by an

@@ -11,8 +11,8 @@ Then, unless you re part of the Greyjoy<sup>1</sup> family, you should read this
 Install
 -------
 
-- clone the repository : `git clone https://github.com/Kraymer/_dotfiles.git ~/`.
-  *Important:* it must be located in your $HOME for .stowrc files to work as
+- clone the repository : `git clone https://github.com/Kraymer/_dotfiles.git ~/`.  
+  *Important:* it must be located in your `$HOME` for .stowrc files to work as
   expected
 - `stow stow` first to install stow global ignore file
 - edit around and stow away
@@ -31,7 +31,8 @@ Private files
 -------------
 
 Files that contain sensitive information and should not be published must
-contain *local* in their filename.
+contain *local* in their filename. They should be accompagnied by an 
+*.example. file that will be published in place.
 
 FAQ
 ---

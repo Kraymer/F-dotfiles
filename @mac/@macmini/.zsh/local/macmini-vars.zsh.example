@@ -1,0 +1,2 @@
+export ATTIC_PATHS_TO_BACKUP="xxx"
+export ATTIC_REPOSITORY=user@host:/path

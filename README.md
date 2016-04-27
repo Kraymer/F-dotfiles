@@ -1,20 +1,12 @@
-Preamble
---------
-
-![You dot know nothing about stow](https://dl.dropboxusercontent.com/u/1026715/github/_dotfiles/ygritte-meme.jpg)
-
-Rings true?
-Then, unless you re part of the Greyjoy<sup>1</sup> family, you should read this [article](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) that present it briefly.
-
-<sup>1</sup> not the intended audience here. Reminder: *"[We do not stow"](https://scifi.stackexchange.com/questions/4222/what-does-house-greyjoys-motto-we-do-not-sow-mean)* -- House Greyjoy's motto
+![](https://dl.dropboxusercontent.com/u/1026715/github/_dotfiles/banner.png)
 
 Install
 -------
 
-- clone the repository : `git clone https://github.com/Kraymer/_dotfiles.git ~/`  
-  *Important:* it must be located in your `$HOME` for *.stowrc* files to work as
+- clone the repository : `git clone https://github.com/Kraymer/#dotfiles.git ~/dotfiles`  
+  *Important:* it must be cloned in your `$HOME` for *.stowrc* files to work as
   expected
-- `stow stow` first to install stow global ignore file
+- execute `stow stow` first to install stow global ignore file
 
 Then, edit around and stow away!
 

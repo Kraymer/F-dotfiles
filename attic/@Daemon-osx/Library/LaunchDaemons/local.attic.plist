@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GroupName</key>
+	<string>staff</string>
+	<key>InitGroups</key>
+	<true/>
 	<key>Label</key>
-	<string>com.zerowidth.launched.attic</string>
+	<string>local.launched.attic</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>zsh</string>
@@ -12,14 +16,12 @@
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>/tmp/com.zerowidth.launched.attic.err</string>
+	<string>/tmp/local.launched.attic.stderr</string>
 	<key>StandardOutPath</key>
-	<string>/tmp/com.zerowidth.launched.attic.out</string>
+	<string>/tmp/local.launched.attic.stdout</string>
 	<key>StartInterval</key>
-	<integer>3600</integer>
+	<integer>7200</integer>
 	<key>UserName</key>
 	<string>flap</string>
-	<key>WorkingDirectory</key>
-	<string>/Users/flap/bin/</string>
 </dict>
 </plist>

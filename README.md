@@ -11,11 +11,12 @@ Then, unless you re part of the Greyjoy<sup>1</sup> family, you should read this
 Install
 -------
 
-- clone the repository : `git clone https://github.com/Kraymer/_dotfiles.git ~/`.  
-  *Important:* it must be located in your `$HOME` for .stowrc files to work as
+- clone the repository : `git clone https://github.com/Kraymer/_dotfiles.git ~/`
+  *Important:* it must be located in your `$HOME` for *.stowrc* files to work as
   expected
 - `stow stow` first to install stow global ignore file
-- edit around and stow away
+
+Then, edit around and stow away!
 
 Files naming conventions
 ------------------------
@@ -23,15 +24,19 @@ Files naming conventions
 Few simple rules to make the nature of stow packages explicit :
 
 - lowercase for packages to install in `$HOME`
-- titlecase for packages to install as root in `/`
-- leading `@` for packages related to an environment
-- leading `_` for non packages
+- titlecase for packages to install as root in `/`, eg
+  [@Daemon-osx](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
+- leading `@` for packages related to an environment, eg
+  [@mac](https://github.com/Kraymer/_dotfiles/blob/master/%40mac/)
+  Required for subpackages (ie a stowable directory located in *_dotfiles/\**)
+  to distinguish them from content of parent package
+- leading `_` for non packages, eg [_homebrew](https://github.com/Kraymer/_dotfiles/blob/master/_homebrew)
 
 Private files
 -------------
 
 Files that contain sensitive information and should not be published must
-contain *local* in their filename. They should be accompagnied by an 
+contain *local* in their filename. They should be accompagnied by an
 *.example* file that will be published instead.
 
 FAQ

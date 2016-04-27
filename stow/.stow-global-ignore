@@ -1,4 +1,5 @@
 .DS_Store
 .git
 .gitignore
+.stow-local-ignore
 ^/README.*

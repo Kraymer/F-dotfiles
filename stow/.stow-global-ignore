@@ -2,4 +2,6 @@
 .git
 .gitignore
 .stow-local-ignore
+.stowrc
+^/@.*
 ^/README.*

@@ -32,17 +32,17 @@ Private files
 
 Files that contain sensitive information and should not be published must
 contain *local* in their filename. They should be accompagnied by an 
-*.example. file that will be published in place.
+*.example* file that will be published instead.
 
 FAQ
 ---
 
 *Where to save a file that is installed at different locations depending on the OS ?*
 
-Create the part of the filepath that is common to the two OS in `/common`. Then create a stow package directory for each os and link the common file from it.
-*Example:* [sublime_text_3 package](https://github.com/Kraymer/_dotfiles/tree/master/sublime_text_3-linux/.config/sublime-text-3)
+Create the part of the filepath that is common to the two OS in `<package>/_common`. Then create a stow package directory for each os and link the common file from it.
+*Example:* [sublime_text_3 package](https://github.com/Kraymer/_dotfiles/tree/master/sublime_text_3/%40linux/.config/sublime-text-3)
 
 *How to keep a file secret when adding `local` to its name is not an option ?*
 
-Add a `/.gitignore` inside the containing package. It should be the exception though, whenever possible apply the *[local rule](https://github.com/Kraymer/_dotfiles#_dotfiles)* which is more explicit.
+Add a `/.gitignore` inside the containing package.
 *Example:* [qifqif package](https://github.com/Kraymer/_dotfiles/tree/master/qifqif)

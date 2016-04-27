@@ -11,7 +11,7 @@ Then, unless you re part of the Greyjoy<sup>1</sup> family, you should read this
 Install
 -------
 
-- clone the repository : `git clone https://github.com/Kraymer/_dotfiles.git ~/`
+- clone the repository : `git clone https://github.com/Kraymer/_dotfiles.git ~/`  
   *Important:* it must be located in your `$HOME` for *.stowrc* files to work as
   expected
 - `stow stow` first to install stow global ignore file
@@ -25,12 +25,12 @@ Few simple rules to make the nature of stow packages explicit :
 
 - lowercase for packages to install in `$HOME`
 - titlecase for packages to install as root in `/`, eg
-  [@Daemon-osx](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
+  [`@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
 - leading `@` for packages related to an environment, eg
-  [@mac](https://github.com/Kraymer/_dotfiles/blob/master/%40mac/)
-  Required for subpackages (ie a stowable directory located in *_dotfiles/\**)
-  to distinguish them from content of parent package
-- leading `_` for non packages, eg [_homebrew](https://github.com/Kraymer/_dotfiles/blob/master/_homebrew)
+  [`@mac`](https://github.com/Kraymer/_dotfiles/blob/master/%40mac/)
+  Used for subpackages too (ie a stowable directory located in `_dotfiles/*/`),
+  to help distinguish them from content of parent package, eg [`attic/`@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
+- leading `_` for non packages, eg [`_homebrew`](https://github.com/Kraymer/_dotfiles/blob/master/_homebrew)
 
 Private files
 -------------

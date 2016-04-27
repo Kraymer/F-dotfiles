@@ -5,7 +5,6 @@ _comp_options+=(globdots)	# auto-complete dot files
 
 # GNU core utilities
 eval `dircolors ~/.zsh/dircolors.256dark`	# colored ls
-GREP_OPTIONS='-n --color=auto --exclude=*.pyc --exclude-dir=.git'
 
 # History
 HISTFILE=~/.zsh_history

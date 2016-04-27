@@ -27,7 +27,7 @@ Few simple rules to make the nature of stow packages explicit :
 - titlecase for packages to install as root in `/`, eg
   [`@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
 - leading `@` for packages related to an environment, eg
-  [`@mac`](https://github.com/Kraymer/_dotfiles/blob/master/%40mac/)
+  [`@mac`](https://github.com/Kraymer/_dotfiles/blob/master/%40mac/)  
   Used for subpackages too (ie a stowable directory located in `_dotfiles/*/`),
   to help distinguish them from content of parent package, eg [`attic/`@Daemon-osx`](https://github.com/Kraymer/_dotfiles/blob/master/attic/@Daemon-osx)
 - leading `_` for non packages, eg [`_homebrew`](https://github.com/Kraymer/_dotfiles/blob/master/_homebrew)

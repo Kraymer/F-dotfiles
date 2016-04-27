@@ -10,7 +10,7 @@ export PATH=$PATH:~/bin:/usr/local/bin
 
 unsetopt nomatch
 env_config_files=(~/.zsh/**/*.zshenv)
-if test -z "$env_config_files" ;
+if test ! -z "$env_config_files" ;
     then
     for file in ${env_config_files}
     do

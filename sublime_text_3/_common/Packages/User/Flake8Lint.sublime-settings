@@ -1,0 +1,4 @@
+{
+    // skip errors and warnings (e.g. ["E303", "E4", "W"])
+    "ignore": ["D", "E126", "E128", "N806"],
+}

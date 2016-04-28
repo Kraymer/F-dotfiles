@@ -18,7 +18,7 @@
 	[
 		"draw_active"
 	],
-	"indent_to_bracket": true,
+	"indent_to_bracket": false,
 	"remember_open_files": false,
 	"rulers":
 	[

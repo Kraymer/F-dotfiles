@@ -26,17 +26,19 @@ attic_backup() {
 attic_last_backup() {
     local max_delay=$1; shift
 
-    local attic_last_backup_date=`more $attic_last_backup_file`
-    local days_since_last_backup=`echo $(( ($(date +%s) - $(date --date=${attic_last_backup_date} +%s) )/(60*60*24) ))`
-    case $days_since_last_backup in
-    [0-$1])
-      color=""
-      ;;
-    *)
-      color=`tput setaf 1`  # red
-      ;;
-    esac
-
+    color=`tput setaf 1`  # red
+    if ! test -e $attic_last_backup_file;
+    then
+        attic_last_backup_date='N/A'
+    else
+        local attic_last_backup_date=`more $attic_last_backup_file`
+        local days_since_last_backup=`echo $(( ($(date +%s) - $(date --date=${attic_last_backup_date} +%s) )/(60*60*24) ))`
+        case $days_since_last_backup in
+        [0-$1])
+          color=""
+          ;;
+        esac
+    fi
     echo "Last backup:" ${color}${attic_last_backup_date}
 }
 

@@ -3,5 +3,6 @@
 .gitignore
 .stow-local-ignore
 .stowrc
+.*.example
 ^/@.*
 ^/README.*

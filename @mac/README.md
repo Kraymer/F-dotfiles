@@ -1,7 +1,4 @@
-# Macbook specific setup
+# OS X specific setup
 
-    ├── .zsh
-    │   └── local
-    │       ├── macbook-vars.zsh
-    │       └── macbook-vars.zshenv
-    └── gitconfig.local
+This package installs configuration files, aliases, functions, etc. for an OS X environment.
+

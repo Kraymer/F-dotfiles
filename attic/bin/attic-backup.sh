@@ -18,7 +18,7 @@ attic_backup() {
     if ! attic create -v --stats $ATTIC_REPOSITORY::$HOSTNAME-$DATE $ATTIC_PATHS_TO_BACKUP;
         then
         attic prune -v $1 --keep-daily=4 --keep-weekly=4 --keep-monthly=6
-        echo $DATE > ~/.local/attic_last_backup
+        echo $DATE > $ATTIC_LAST_BACKUP_FILE
     fi
 }
 

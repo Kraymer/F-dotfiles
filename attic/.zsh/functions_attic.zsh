@@ -1,22 +1,4 @@
-attic_last_backup_file=${HOME}/.local/attic_last_backup
-
-# Create an archive, prune existing ones and write date of execution on
-# filesystem.
-#
-# $1 - repository
-# $2 - paths to backup
-attic_backup() {
-    local repository=$1; shift
-    local paths_to_backup=$1; shift
-
-    local archive_name=${HOSTNAME}-`date "+%Y-%m-%d"`
-    attic create -v --stats $repository::$archive_name   \
-        $paths_to_backup && echo $date_now > $attic_last_backup_file
-
-    # Use `prune` to maintain 7 daily, 4 weekly and 6 monthly archives.
-    attic prune -v $1 --keep-daily=4 --keep-weekly=4 --keep-monthly=6
-}
-
+export ATTIC_LAST_BACKUP_FILE=${HOME}/.local/attic_last_backup
 
 # Read date of last execution on filesystem and print it. Print in red if more
 # than MAX_DELAY days elapsed since last backup.

@@ -1,7 +1,7 @@
 ## [Attic](https://attic-backup.org/)
 
-    └── .zsh
-        └── functions_attic.zsh
+Requires `$ATTIC_PATHS_TO_BACKUP` `$ATTIC_REPOSITORY`  
+to be defined in a @package
 
 This package defines a zsh wrapper function `attic_backup` that merges `create`
 and `prune` subcommands into a single execution: it makes sense to prune old

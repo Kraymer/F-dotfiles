@@ -1,8 +1,9 @@
 ## [Mutt](http://www.mutt.org/)
 
-This package installs the `.muttrc` configuration file for a Gmail account.
-It requires a bunch of `MUTT_*` environment variables to be defined, you can use
-an environment package for that.
+This package installs the `.muttrc` configuration file for a Gmail account.  
+
+It requires a bunch of `MUTT_*` environment variables to be defined, use
+[`@mac mac-vars.zsh.example file`](https://github.com/Kraymer/F-dotfiles/tree/master/%40mac/.zsh/local/mac-vars.zsh.example) as a starting point.
 
 ### Mutt install notes
 

@@ -1,4 +1,5 @@
-**/local/**/*.zsh*
+**/local/**/*.zsh
+**/local/**/*.zshenv
 .DS_Store
 /bin/
 !README.md

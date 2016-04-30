@@ -1,0 +1,5 @@
+# Mutt
+export MUTT_FROM="[REDACTED@gmail.com]"
+export MUTT_IMAP_PASS="[REDACTED]"
+export MUTT_IMAP_USER="[REDACTED]"
+export MUTT_REAL_NAME="[REDACTED]"

@@ -9,6 +9,6 @@ Some [aliases](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.zsh/aliase
 
 Others packages define environment variables or functions by writing shell files into `~/.zsh`.
 
-`~/.zsshenv` sources all **.zshenv* files present in `~/.zsh` subfolders.
+`~/.zsshenv` sources all **.zshenv* files present in `~/.zsh` subfolders.  
 `~/.zshrc` sources all **.zsh* files present in `~/.zsh` subfolders.
 

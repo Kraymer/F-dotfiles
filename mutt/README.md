@@ -5,7 +5,7 @@ This package installs the `.muttrc` configuration file for a Gmail account.
 It requires a bunch of `MUTT_*` environment variables to be defined, use
 [`@mac mac-vars.zsh.example file`](https://github.com/Kraymer/F-dotfiles/tree/master/%40mac/.zsh/local/mac-vars.zsh.example) as a starting point.
 
-### Mutt install notes
+### Install notes
 
 Create the directories and files mutt will use to cache message information and
 store certificates by executing:

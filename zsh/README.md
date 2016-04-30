@@ -1,30 +1,14 @@
 # Zsh
 
-    ├── .oh_my.zsh
-    ├── .zsh
-    │   ├── aliases.zsh
-    │   ├── config.zsh
-    │   ├── dircolors.256dark
-    │   └── functions.zsh
-    ├── .zshenv
-    └── .zshrc
+[Loads Oh-My-Zsh](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.oh_my.zsh) and activate powerlevel9k theme ([to install](https://github.com/bhilburn/powerlevel9k)).  
+Some [aliases](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.zsh/aliases.zsh) that adds sane options to core shell functions and GNU utilities.
 
+![zsh prompt](https://dl.dropboxusercontent.com/u/1026715/github/F-dotfiles/zshprompt.png)
 
-### .oh_my.zsh
+### Customization
 
-Load zsh theme and plugins.
-Install powerlevel9k theme at https://github.com/bhilburn/powerlevel9k
+Others packages define environment variables or functions by writing shell files into `~/.zsh`.
 
-### .zsh/config.zsh
-
-Configure core shell functions and GNU utilities.
-
-### .zshenv
-
-Loaded first, its role is to define all exported variables used by other scripts.
-Sources all *.zshenv files in subfolders.
-
-### .zshrc
-
-Sources all *.zsh files in subfolders.
+`~/.zsshenv` sources all **.zshenv* files present in `~/.zsh` subfolders.
+`~/.zshrc` sources all **.zsh* files present in `~/.zsh` subfolders.
 

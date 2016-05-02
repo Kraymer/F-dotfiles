@@ -12,9 +12,9 @@
 [mergetool]
         keepBackup = false
 [diff]
-        tool = diffmerge
-[difftool "diffmerge"]
-        cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+   	tool = icdiff
+[difftool "icdiff"]
+ 	cmd = icdiff $LOCAL $REMOTE
 [help]
         autocorrect = 1
 [push]
@@ -29,6 +29,7 @@
 	st = status
 	uncommit = reset --soft HEAD~
 	unstage = reset HEAD --
+	lg = log --graph --abbrev-commit --decorate --date=relative --all
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean %f

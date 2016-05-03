@@ -8,8 +8,7 @@ export PATH=$PATH:~/bin:/usr/local/bin
 
 # load zsh config files
 
-unsetopt nomatch
-env_config_files=(~/.zsh/**/*.zshenv)
+env_config_files=(~/.zsh/**/*.zshenv(N))
 if test ! -z "$env_config_files" ;
     then
     for file in ${env_config_files}

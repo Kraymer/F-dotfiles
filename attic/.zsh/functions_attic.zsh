@@ -9,8 +9,7 @@ attic_last_backup() {
     local max_delay=$1; shift
 
     color=`tput setaf 1`  # red
-    if ! test -e $attic_last_backup_file;
-    then
+    if [ ! -f $ATTIC_LAST_BACKUP_FILE ]; then
         attic_last_backup_date='N/A'
     else
         local attic_last_backup_date=`more $attic_last_backup_file`

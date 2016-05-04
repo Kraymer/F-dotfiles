@@ -1,2 +1,7 @@
-export ATTIC_PATHS_TO_BACKUP="xxx"
+export ATTIC_PATHS_TO_BACKUP=/Users/JohnDoe
 export ATTIC_REPOSITORY=user@host:/path
+
+# Number of archives to keep when pruning
+# export ATTIC_DAILY=1
+# export ATTIC_WEEKLY=1
+# export ATTIC_MONTHLY=1

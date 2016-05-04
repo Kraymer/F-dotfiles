@@ -1,31 +1,41 @@
-#!/bin/bash
+#!/bin/zsh
 
 usage ()
 {
-  echo "USAGE: attic-backup.sh ARCHIVE PATH [PATH ...]
+  echo "USAGE: attic-backup.sh [ARCHIVE] [PATHS]
 
-Create new archive and prune existing ones : keep 7 daily, 4 weekly, 6 monthly.
+Create new archive and prune existing ones.
 
-  ARCHIVE               archive to create
-  PATH                  paths to archive"
-  exit
+  ARCHIVE   archive to create. Default: \$ATTIC_REPOSITORY
+  PATHS     paths to archive. Default: \$ATTIC_PATHS_TO_BACKUP"
 }
 
 # $1 - archive to create
 # $2 - paths to archive
 attic_backup() {
-    DATE=`date "+%Y-%m-%d"`
-    if ! attic create -v --stats $ATTIC_REPOSITORY::$HOSTNAME-$DATE $ATTIC_PATHS_TO_BACKUP;
-        then
-        attic prune -v $1 --keep-daily=4 --keep-weekly=4 --keep-monthly=6
-        echo $DATE > $ATTIC_LAST_BACKUP_FILE
+    local repository="${1:-$ATTIC_REPOSITORY}"
+    local paths="${2:-$ATTIC_PATHS_TO_BACKUP}"
+
+    local nowdate=`date "+%Y-%m-%d"`
+    exclude_from=()
+    if [[ $ATTIC_EXCLUDE_FILE ]]; then
+        exclude_from=(--exclude-from "$ATTIC_EXCLUDE_FILE")
+    fi
+    attic create -v --stats --exclude-caches "${exclude_from[@]}" $repository::$HOSTNAME-$nowdate $paths
+    if [[ $? -eq 0 ]]; then
+        daily=${ATTIC_DAILY:-7}
+        weekly=${ATTIC_WEEKLY:-4}
+        monthly=${ATTIC_MONTHLY:-6}
+
+        attic prune -v $repository --keep-daily=$daily --keep-weekly=$weekly --keep-monthly=$monthly
+        echo $nowdate > $ATTIC_LAST_BACKUP_FILE
     fi
 }
 
 main() {
-    if [ "$#" -ne 2 ]
-    then
+    if [ "$1" = "-h" ]; then
       usage
+      exit 0
     fi
     attic_backup "$@"
 }

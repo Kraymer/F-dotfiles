@@ -6,7 +6,7 @@
     "live_mode": true,
 
     // skip errors and warnings (e.g. ["E303", "E4", "W"])
-    "ignore": ["D", "E126", "E128", "N806"],
+    "ignore": ["D", "E126", "E121", "E123", "E128", "N806"],
 
     // complexity check (set number > 0 to check complexity level)
     "complexity": 12,

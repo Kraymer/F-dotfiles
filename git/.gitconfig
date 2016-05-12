@@ -13,6 +13,8 @@
         keepBackup = false
 [diff]
    	tool = icdiff
+[difftool]
+    prompt = false
 [difftool "icdiff"]
  	cmd = icdiff $LOCAL $REMOTE
 [help]

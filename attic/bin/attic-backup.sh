@@ -21,7 +21,7 @@ attic_backup() {
     if [[ $ATTIC_EXCLUDE_FILE ]]; then
         exclude_from=(--exclude-from "$ATTIC_EXCLUDE_FILE")
     fi
-    attic create -v --stats --exclude-caches "${exclude_from[@]}" $repository::$HOSTNAME-$nowdate $paths
+    attic create -v --stats --exclude-caches "${exclude_from[@]}" $repository::$HOST-$nowdate $paths
     if [[ $? -eq 0 ]]; then
         daily=${ATTIC_DAILY:-7}
         weekly=${ATTIC_WEEKLY:-4}

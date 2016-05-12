@@ -26,4 +26,3 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 setopt NO_BG_NICE       # don't nice background tasks
 setopt NO_CASE_GLOB     # Case insensitive globbing
 setopt NO_LIST_BEEP
-setopt RM_STAR_WAIT     # 10 second wait if you do something that will delete everything

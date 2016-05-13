@@ -34,15 +34,15 @@ FAQ
 
 :one: *Where to save a file that is installed at different locations depending on the OS ?*
 
-Create the part of the filepath that is common to the two OS in `<package>/_common`. Then create a subpackage directory for each os and link the common file from it.
+Create the part of the filepath that is common to the two OS in `<package>/_common`. Then create a subpackage directory for each os and link the common file from it.  
 *Example:* [sublime_text_3 package](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux/.config/sublime-text-3)
 
-:two: How to keep a file secret when adding `.sec` to its name is not an option ?*
+:two: *How to keep a file secret when adding `.sec` to its name is not an option ?*
 
-Add a `/.gitignore` inside the containing package.
+Add a `/.gitignore` inside the containing package.  
 *Example:* [qifqif package](https://github.com/Kraymer/F-dotfiles/tree/master/qifqif)
 
-:three: How to keep secret files in the repository for easy deployment while having a public version with no *sec* files on my Github?
+:three: *How to keep secret files in the repository for easy deployment while having a public version with no *sec* files on my Github?*
 
 *Disclaimer: best practice is to NOT keep secrets files in a version system*
 

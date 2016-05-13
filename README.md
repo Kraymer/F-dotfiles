@@ -26,19 +26,28 @@ Few simple rules to make the nature of stow packages explicit :
 
 **Private files**
 
-Files that contain sensitive information and should not be published must
-contain *local* in their filepath. They should be accompagnied by a 
-*.example* file to illustrate their use.
+Files that contain sensitive information must have *.sec* or */sec/* in their filepath to be ignored by the 
+`.gitignore`. They should be accompagnied by an *.example* file to illustrate their use.
 
 FAQ
 ---
 
-*Where to save a file that is installed at different locations depending on the OS ?*
+:one: *Where to save a file that is installed at different locations depending on the OS ?*
 
 Create the part of the filepath that is common to the two OS in `<package>/_common`. Then create a subpackage directory for each os and link the common file from it.
 *Example:* [sublime_text_3 package](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux/.config/sublime-text-3)
 
-*How to keep a file secret when adding `local` to its name is not an option ?*
+:two: How to keep a file secret when adding `.sec` to its name is not an option ?*
 
 Add a `/.gitignore` inside the containing package.
 *Example:* [qifqif package](https://github.com/Kraymer/F-dotfiles/tree/master/qifqif)
+
+:three: How to keep secret files in the repository for easy deployment while having a public version with no *sec* files on my Github?
+
+*Disclaimer: best practice is to NOT keep secrets files in a version system*
+
+Create a branch *private* and add a private repository (paying on Github, but free elsewhere) as remote.  
+Append `!*.secret` pattern to `/.gitignore`  
+Use [git-secret](https://sobolevn.github.io/git-secret/#usage) to encrypt *sec* files and commit resulting *.secret* files in the repository.  
+Merge *master* into *private* at will, and use the private repo for your own deployments.
+

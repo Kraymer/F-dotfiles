@@ -42,7 +42,7 @@ Create the part of the filepath that is common to the two OS in `<package>/_comm
 Add a `/.gitignore` inside the containing package.  
 *Example:* [qifqif package](https://github.com/Kraymer/F-dotfiles/tree/master/qifqif)
 
-:three: *How to keep secret files in the repository for easy deployment while having a public version with no *sec* files on my Github?*
+:three: *How to keep secret files in the repository for easy deployment while having a public version without them on my Github?*
 
 *Disclaimer: best practice is to NOT keep secrets files in a version system*
 

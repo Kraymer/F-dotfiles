@@ -1,7 +1,7 @@
 ![F-dotfiles banner](https://dl.dropboxusercontent.com/u/1026715/github/F-dotfiles/banner.png)
 
-F-dotfiles is an opiniated dotfiles organization scheme based on stow.  
-Highest priorities are ease of maintenance and deployment on both Linux and OS X.
+*F-dotfiles is an opiniated dotfiles organization scheme based on stow.   
+Highest priorities are ease of maintenance and deployment on both Linux and OS X.*
 
 ## Install
 
@@ -27,12 +27,12 @@ Few simple rules to make the nature of stow packages explicit :
 
 ### :two: Documentation
 
-Each package have a `README.md` that introduces the package features.
+Each package has a `README.md` that introduces the package features.
 
 ### :three: Secret files
 
-Secret files that contain sensitive information must have *.sec* or */sec/* in their filepath to be ignored by the 
-`.gitignore`. If not possible, then declare the file in a `/.gitignore` inside the containing package.  
+Secret files that should not be published must have *.sec* or */sec/* in their filepath to be ignored by the root
+`.gitignore` file. If not possible, then declare the file in a `/.gitignore` inside the containing package.  
 *Example:* [qifqif package](https://github.com/Kraymer/F-dotfiles/tree/master/qifqif).
 
 Each secret file should be accompagnied by an *.example* file that is commited instead, to illustrate the use.  
@@ -46,7 +46,7 @@ Append `!*.secret` pattern to `/.gitignore`
 Use [git-secret](https://sobolevn.github.io/git-secret/#usage) to encrypt *sec* files and commit resulting *.secret* files in the repository.  
 Merge *master* into *private* at will, and use the private repo for your own deployments.
 
-### :three: Cross-platform friendly
+### :four: Cross-platform friendly
 
 #### *Where to save a file that is installed at different locations depending on the OS ?*
 

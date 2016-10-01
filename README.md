@@ -14,7 +14,7 @@ Then, edit around and stow away!
 
 ## Guidelines
 
-### :one: Directories naming rules
+### Directories naming rules
 
 Few simple rules to make the nature of stow packages explicit :
 
@@ -25,11 +25,11 @@ Few simple rules to make the nature of stow packages explicit :
   [`@mac`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/), [`attic/@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx)
 - leading `_` for non packages, eg [`_homebrew`](https://github.com/Kraymer/F-dotfiles/blob/master/_homebrew)
 
-### :two: Documentation
+### Documentation
 
 Each package has a `README.md` that introduces the package features.
 
-### :three: Secret files
+### Secret files
 
 Secret files that should not be published must have *.sec* or */sec/* in their filepath to be ignored by the root
 `.gitignore` file. If not possible, then declare the file in a `/.gitignore` inside the containing package.  
@@ -46,11 +46,9 @@ Append `!*.secret` pattern to `/.gitignore`
 Use [git-secret](https://sobolevn.github.io/git-secret/#usage) to encrypt *sec* files and commit resulting *.secret* files in the repository.  
 Merge *master* into *private* at will, and use the private repo for your own deployments.
 
-### :four: Cross-platform friendly
+### Cross-platform friendly
 
 #### *Where to save a file that is installed at different locations depending on the OS ?*
 
 Create the part of the filepath that is common to the two OS in `<package>/_common`. Then create a subpackage directory for each os and link the common file from it.  
 *Example:* [sublime_text_3 package](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux/.config/sublime-text-3)
-
-

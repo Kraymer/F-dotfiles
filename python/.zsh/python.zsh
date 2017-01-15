@@ -1,2 +1,0 @@
-# virtualenvwrapper
-source virtualenvwrapper.sh

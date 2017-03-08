@@ -7,6 +7,7 @@
 	"detect_indentation": false,
 	"ensure_newline_at_eof_on_save": true,
 	"expand_tabs_on_save": true,
+	"font_size": 11,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -22,7 +23,7 @@
 	"remember_open_files": false,
 	"rulers":
 	[
-		79
+		99
 	],
 	"scroll_past_end": true,
 	"tab_size": 4,

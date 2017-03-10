@@ -20,7 +20,7 @@
 		"draw_active"
 	],
 	"indent_to_bracket": false,
-	"remember_open_files": false,
+	"remember_open_files": true,
 	"rulers":
 	[
 		99

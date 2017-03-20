@@ -9,7 +9,7 @@ of successfull backup.
 zsh echoes date of last successfull backup at startup, so you get alerted if
  something went haywire in your backup strategy.
 
-![attic last backup terminal info](https://dl.dropboxusercontent.com/u/1026715/github/F-dotfiles/attic_prompt.png)
+![attic last backup terminal info](https://raw.githubusercontent.com/Kraymer/bulkdata/master/F-dotfiles/attic_prompt.png)
 
 For osx users, delegate the chore to perform backups to a `launchd` service by
 installing the [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/tree/master/attic/%40Daemon-osx) subpackage.

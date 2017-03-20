@@ -7,8 +7,10 @@
 	[
 		"BracketHighlighter",
 		"Dotfiles Syntax Highlighting",
+		"Function Name Display",
 		"Monokai Extended",
 		"Package Control",
+		"PackageResourceViewer",
 		"Pretty JSON",
 		"Python Fix Imports",
 		"Python Flake8 Lint",

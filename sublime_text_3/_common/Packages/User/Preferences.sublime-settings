@@ -20,10 +20,10 @@
 		"draw_active"
 	],
 	"indent_to_bracket": false,
-	"remember_open_files": false,
+	"remember_open_files": true,
 	"rulers":
 	[
-		79
+		99
 	],
 	"scroll_past_end": true,
 	"tab_size": 4,

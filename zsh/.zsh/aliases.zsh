@@ -3,6 +3,7 @@ alias grep='grep -nH --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} --exclu
 alias h=history
 alias rm='rm -i'
 alias tmux='tmux -2'
+alias nano='nano -c'
 
 # suffix aliases
 alias -s log=nano

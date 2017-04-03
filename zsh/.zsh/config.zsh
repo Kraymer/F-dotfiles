@@ -10,8 +10,8 @@ export LANG=en_US.UTF-8
 
 # History
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 setopt EXTENDED_HISTORY # add timestamps to history
 setopt SHARE_HISTORY    # share history between sessions ???
 setopt APPEND_HISTORY   # adds history

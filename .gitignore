@@ -1,6 +1,6 @@
-**/sec/**/*.zsh
-**/sec/**/*.zshenv
-*.sec*
+**/local/**/*.zsh
+**/local/**/*.zshenv
+*.local*
 .DS_Store
 .gitsecret
 /bin/

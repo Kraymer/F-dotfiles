@@ -7,6 +7,7 @@
 	"detect_indentation": false,
 	"ensure_newline_at_eof_on_save": true,
 	"expand_tabs_on_save": true,
+	"font_size": 12,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -27,5 +28,5 @@
 	"scroll_past_end": true,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": false
 }

@@ -1,4 +1,4 @@
-Formulaes for [Homebrew](brew.sh), the missing package manager for macOS.
+**Formulaes for [Homebrew](http://brew.sh) <<http://brew.sh>>,** *the missing package manager for macOS.*
 
     └── Brewfile         List of formulaes
 

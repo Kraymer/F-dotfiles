@@ -1,4 +1,4 @@
-Custom linux installs
+**Custom config for my work lenovo machine**
 
     ├── .Xmodmap            Switch Ctrl/Alt key for my lenovo keyboard
     ├── .zsh                Define/load stuff on zsh startup

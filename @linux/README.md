@@ -1,6 +1,6 @@
 Custom linux installs
 
-# Preview
+## Preview
 
     .
     ├── .Xmodmap            Switch Ctrl/Alt key for my lenovo keyboard

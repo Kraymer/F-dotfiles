@@ -1,5 +1,7 @@
 ## OS X specific setup
  
+    ├── .config
+    │   └── .gitconfig.sec                I use same git credentials on my macs 
     ├── .zsh
     │   ├── mac-aliases.zsh               Standard terminal commands mac aliases
     │   ├── mac-vars.sec.zsh              (secret) Env variables definitions

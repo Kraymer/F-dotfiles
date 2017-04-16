@@ -11,12 +11,10 @@
     │               └── Packages -> ../../../../_common/Packages 
     └── _common
         └── Packages
-            ├── Installed Packages
-            │   └── Package Control.sublime-package
             └── User
                 ├── Flake8Lint.sublime-settings
                 ├── Monokai (Flake8Lint).tmTheme
-                ├── Package Control.sublime-settings
+                ├── Package Control.sublime-settings        List of packages to install
                 └── Preferences.sublime-settings
                 
 ### Install notes

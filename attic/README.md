@@ -5,6 +5,8 @@
     └── bin
         └── attic-backup.sh        Create new attic archive and prune existing ones
 
+## Instructions
+
 Rock solid backup process in 3 steps :
 
 1. Specify your `ATTIC_*` environment variables in your machine package (see [example](https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/%40mac/%40macbook/.zsh/macbook-vars.sec.zsh.example))

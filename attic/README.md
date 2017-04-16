@@ -1,4 +1,4 @@
-**This package helps you streamline your [`Attic`](https://attic-backup.org/) backup strategy.**
+**This package helps you streamline your [`Attic`](https://attic-backup.org/) <<https://attic-backup.org/>>  backup strategy.**
 
     ├── .zsh
     │   └── functions_attic.zsh    Display last backup date in your terminal

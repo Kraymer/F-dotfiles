@@ -6,11 +6,10 @@ Highest priorities are ease of maintenance and deployment on both Linux and OS X
 ## Install
 
 - clone the repository : `git clone https://github.com/Kraymer/f-dotfiles.git ~/`  
-  *Important:* it must be cloned in your `$HOME` for *.stowrc* files to work as
-  expected
-- execute `stow stow` first to install stow global ignore file
+- execute `stow -t ~ stow` first, so that stow is properly configured for later dot files installs
 
-Then, edit around and stow away!
+Then, edit around and install package via `stow <package_name>` command.  
+When needed, special install instructions are present in package `README.md` file.
 
 ## Guidelines
 

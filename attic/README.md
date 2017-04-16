@@ -2,7 +2,7 @@
 
 This stow package helps you streamline your backup strategy.
 
-Backup [preconfigured locations](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/%40macbook/.zsh/local/macbook-vars.zsh.example)
+Backup [preconfigured locations](https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/%40mac/%40macbook/.zsh/macbook-vars.sec.zsh.example)
 by executing `attic-backup.sh`, old archives are automatically pruned in case
 of successfull backup.
 
@@ -14,9 +14,14 @@ zsh echoes date of last successfull backup at startup, so you get alerted if
 For osx users, delegate the chore to perform backups to a `launchd` service by
 installing the [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/tree/master/attic/%40Daemon-osx) subpackage.
 
+### Requirements
+[`mac/@macbook/.zsh/macbook-vars.sec.zsh.example`](https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/%40mac/%40macbook/.zsh/macbook-vars.sec.zsh.example) : 
+`ATTIC_*` environment variables should be defined in your machine package.
+
+
 ### Install notes
     
     cd ~/F-dotfiles; stow stow  # install stow ignore file
-    cd @mac; stow @macbook      # install files in .zsh/local/ that export $ATTIC* vars 
+    cd @mac; stow @macbook      # install machine package that declare $ATTIC* vars 
     cd ..; stow attic
     cd attic; stow @Daemon-osx

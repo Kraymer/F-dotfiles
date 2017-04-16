@@ -21,4 +21,9 @@
                 
 ### Install notes
 
-Install the subpackage corresponding to the target platform.  
+Install the package corresponding to the target platform.  
+
+### Packages
+
+- [@linux](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux)
+- [@osx](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40osx)

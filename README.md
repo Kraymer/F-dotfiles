@@ -26,24 +26,17 @@ Few simple rules to make the nature of stow packages explicit :
 
 ### Documentation
 
-Each package has a `README.md` that introduces the package features.
+dotfiles repos are usually an opaque heap of personal geeky setups.
+
+I wanted to avoid that, that's why each package has a `README.md` that introduces the package features and the role of each package files.
 
 ### Secret files
 
 Secret files that should not be published must have *.sec* or */sec/* in their filepath to be ignored by the root
-`.gitignore` file. If not possible, then declare the file in a `/.gitignore` inside the containing package.  
-*Example:* [qifqif package](https://github.com/Kraymer/F-dotfiles/tree/master/qifqif).
+`.gitignore` file.
+Each secret file should be accompagnied by an *.example* file that is commited instead, to illustrate the use.
 
-Each secret file should be accompagnied by an *.example* file that is commited instead, to illustrate the use.  
-
-#### *How to keep secret files in the repository for easy deployment while having a public version without them on my Github?*
-
-*Disclaimer: best practice is to NOT keep secrets files in a version system*
-
-Create a branch *private* and add a private repository (paying on Github, but free elsewhere) as remote.  
-Append `!*.secret` pattern to `/.gitignore`  
-Use [git-secret](https://sobolevn.github.io/git-secret/#usage) to encrypt *sec* files and commit resulting *.secret* files in the repository.  
-Merge *master* into *private* at will, and use the private repo for your own deployments.
+Keep your secret files as short as possible to limit their influence as it complicates deployments (as they cannot be just pulled from github). 
 
 ### Cross-platform friendly
 

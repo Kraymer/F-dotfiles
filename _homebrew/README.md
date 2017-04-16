@@ -1,7 +1,12 @@
+To tap into additional repos of formulae :
+
+    brew tap homebrew/science
+    brew tap homebrew/dupes
+
 To create the packages list do :
 
-    brew leaves | sort > packages.txt
+    brew leaves | sort > Brewfile
 
 When it comes to recovery, we can save time and effort by using xargs to pipe out each of the lines as an argument to brew install :
 
-    cat packages.txt | xargs brew install
+    cat Brewfile | xargs brew install

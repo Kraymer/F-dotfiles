@@ -1,32 +1,48 @@
-brew 'aacgain'
-brew 'ack'
-brew 'autojump'
-brew 'coreutils'
-brew 'exiftool'
-brew 'exiv2'
-brew 'ffmpeg'
-brew 'imagemagick'
-brew 'lame'
-brew 'mp3gain'
-brew 'mutt'
-brew 'openssl'
-brew 'poppler'
-brew 'pyexiv2'
-brew 'readline'
-brew 'tesseract'
-brew 'tmux'
-brew 'unrar'
-brew 'wget'
-brew 'xvid'
-brew 'youtube-dl'
-brew 'ack'
-brew 'coreutils'
-brew 'imagemagick'
-brew 'openssl'
-brew 'readline'
-brew 'ruby-build'
-brew 'rbenv'
-brew 'unrar'
-brew 'wget'
-brew 'youtube-dl'
-brew 'nano'
+aacgain
+ack
+autojump
+bash-completion
+bash-git-prompt
+chromaprint
+coreutils
+exiftool
+faac
+faad2
+findutils
+gcc
+git
+gnu-sed
+homebrew/binary/libspotify
+homebrew/dupes/nano
+homebrew/dupes/zlib
+htop
+imagemagick
+iperf
+jpeginfo
+libksba
+libvorbis
+libxslt
+libyaml
+mp3gain
+mp3val
+mpg123
+mplayer
+mutt
+ncdu
+nginx
+ninja
+poppler
+pyexiv2
+qpdf
+rbenv
+redis
+spark
+stow
+tesseract
+tmux
+tree
+unrar
+watch
+webp
+wget
+youtube-dl

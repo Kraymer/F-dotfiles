@@ -1,5 +1,7 @@
-## [nano](http://nano-editor.org/)
+**Syntax coloration files for `nano`<<http://nano-editor.org>> editor.**
 
-This package installs syntax coloration files for nano editor.
+![nano syntax coloration](https://raw.githubusercontent.com/Kraymer/bulkdata/master/F-dotfiles/nano_syntax.png)
 
-![nano syntax coloration](https://dl.dropboxusercontent.com/u/1026715/github/F-dotfiles/nano_syntax.png)
+## Requirements
+
+https://github.com/scopatz/nanorc

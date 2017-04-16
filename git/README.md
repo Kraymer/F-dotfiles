@@ -1,6 +1,11 @@
-## Git
+**`git`<<https://git-scm.com/>> setup.**
 
-Basic setup for git, defines few aliases and ignore patterns.
+    ├── .gitconfig
+    └── .gitignore
 
-`.gitconfig` includes `~/.config/.gitconfig.sec`, allowing to have settings (credentials come to mind) specifics to each machine, cf [`@mac/@macbook`](https://github.com/Kraymer/F-dotfiles/tree/master/%40mac/%40macboo
-k/.config/.gitconfig.sec.example).
+`.gitconfig` includes an external `~/.config/.gitconfig.sec`, allowing to have settings (credentials come to mind) specifics to each machine, cf [`@mac/.config/.gitconfig.sec.example`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/.config/.gitconfig.sec.example).
+
+## Requirements
+
+`icdiff`<<https://github.com/jeffkaufman/icdiff>>  
+... or just remove the *difftool* section

@@ -7,7 +7,7 @@
 
 Rock solid backup process in 3 steps :
 
-1. Specify your `ATTIC_*` environment variables in your machine package (see [example](https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/%40mac/%40macbook/.zsh/macbook-vars.sec.zsh.example) 
+1. Specify your `ATTIC_*` environment variables in your machine package (see [example](https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/%40mac/%40macbook/.zsh/macbook-vars.sec.zsh.example))
 
 1. Run backup using `attic-backup.sh`, old archives are automatically pruned in case of successful backup.
 I recommend to use cron to plan the `attic-backup.sh` executions. For osx users, a `launchd` service is provided by 

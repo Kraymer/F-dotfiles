@@ -6,3 +6,6 @@
 /bin/
 !README.md
 !*example
+
+# packages that should not be pushed on github (local backup only)
+qifqif/

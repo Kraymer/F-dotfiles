@@ -3,7 +3,7 @@
     └── .muttrc
 
 It requires a bunch of `MUTT_*` environment variables to be defined, use
-[`@mac mac-vars.zsh.example file`](https://github.com/Kraymer/F-dotfiles/tree/master/%40mac/.zsh/local/mac-vars.zsh.example) as a starting point.
+[`@mac/.zsh/mac-vars.sec.zsh.example`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/.zsh/mac-vars.sec.zsh.example) as model.
 
 ### Install notes
 

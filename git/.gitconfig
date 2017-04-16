@@ -1,38 +1,54 @@
 # Local/private config goes in the include
 [include]
-        path = ~/.config/.gitconfig.sec
-[color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+    path = ~/.config/.gitconfig.sec
+
+[user]
+    name = Fabrice Laporte
+
 [core]
-        excludesfile = ~/.gitignore
-	editor = nano
-[mergetool]
-        keepBackup = false
+    editor = nano
+    excludesfile = ~/.gitignore
+
+# From there, sections are in alphabetic order
+
+[alias]
+    last = log -1 HEAD
+    co = checkout
+    st = status
+    uncommit = reset --soft HEAD~
+    unstage = reset HEAD --
+    lg = log --graph --abbrev-commit --decorate --date=relative --all
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+
 [diff]
-   	tool = icdiff
+    tool = icdiff
+
 [difftool]
     prompt = false
+
 [difftool "icdiff"]
- 	cmd = icdiff $LOCAL $REMOTE
+    cmd = icdiff $LOCAL $REMOTE
+
+[gui]
+    # Remove `git gui` pop-up warning
+    gcwarning = false
+
 [help]
-        autocorrect = 1
+    autocorrect = 1
+
+[mergetool]
+    keepBackup = false
+
+[pull]
+    rebase = true
+
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to suppress warning message
-        default = simple
-[alias]
-	last = log -1 HEAD
-	co = checkout
-	st = status
-	uncommit = reset --soft HEAD~
-	unstage = reset HEAD --
-	lg = log --graph --abbrev-commit --decorate --date=relative --all
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+    default = simple
+
+[rebase]
+    autoStash = true

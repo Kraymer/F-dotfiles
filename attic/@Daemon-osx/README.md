@@ -1,10 +1,8 @@
-## Attic daemon (osx)
-
-This package creates a daemon that performs your backups periodically (every 2 hours by default).
+**This package creates a daemon that performs your backups periodically (every 2 hours by default).**
 
     └── Library
         └── LaunchDaemons
-            └── attic.sec.plist
+            └── attic.plist
 
 ## Instructions
 

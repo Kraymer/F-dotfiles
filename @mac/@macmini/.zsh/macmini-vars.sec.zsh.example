@@ -1,0 +1,9 @@
+# Attic
+export ATTIC_PATHS_TO_BACKUP=${HOME}
+export ATTIC_REPOSITORY=user@host:/path
+export ATTIC_EXCLUDE_FILE=${HOME}/.config/.attic_exclude
+
+# Number of archives to keep when pruning
+export ATTIC_DAILY=1
+export ATTIC_WEEKLY=1
+export ATTIC_MONTHLY=1

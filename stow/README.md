@@ -1,6 +1,7 @@
-**Ignore file for `stow`<<https://www.gnu.org/software/stow/>>, the symlink farm manager.**
+**Config files for `stow`<<https://www.gnu.org/software/stow/>>, the symlink farm manager.**
 
-    └── .stow-global-ignore
+    ├── .stow-global-ignore     Ignore files based on F-dotfiles filenaming scheme
+    └── .stowrc                 Set $HOME as default target dir
     
 ### Install notes
 

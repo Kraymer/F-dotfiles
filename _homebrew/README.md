@@ -1,3 +1,9 @@
+Formulaes for [Homebrew](brew.sh), the missing package manager for macOS.
+
+    └── Brewfile         List of formulaes
+
+## Instructions
+
 To tap into additional repos of formulae :
 
     brew tap homebrew/science

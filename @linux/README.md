@@ -1,4 +1,10 @@
-# Custom linux installs
+Custom linux installs
 
-    sudo apt-get install autojump
-    xmodmap ~/.Xmodmap
+## Preview
+
+    ├── .Xmodmap            Switch Ctrl/Alt key for my lenovo keyboard
+    ├── .zsh                Define/load stuff on zsh startup
+    │   └── linux.zsh       
+    └── bin
+        └── byzanz-gui.sh   Byzanz screencast GUI wrapper
+

@@ -1,5 +1,14 @@
 # Zsh
 
+    ├── .oh_my.zsh                Zsh theme and plugins
+    ├── .zsh
+    │   ├── aliases.zsh
+    │   ├── config.zsh            Configure shell behavior
+    │   ├── dircolors.256dark
+    │   └── functions.zsh         Custom shell functions
+    ├── .zshenv                   Routine loading all .zshenv files
+    └── .zshrc                    Routine loading all .zsh files
+
 This package [loads Oh-My-Zsh](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.oh_my.zsh) and activate powerlevel9k theme ([to install](https://github.com/bhilburn/powerlevel9k)).
 It defines some [aliases](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.zsh/aliases.zsh) that adds sane options to core shell functions and GNU utilities.
 

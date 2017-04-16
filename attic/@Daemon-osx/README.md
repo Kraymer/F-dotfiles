@@ -7,3 +7,7 @@
 ## Instructions
 
 Please read [parent package instructions](https://github.com/Kraymer/F-dotfiles/tree/master/attic#instructions).
+
+## Install notes
+
+    stow --target=/ @Daemon-osx

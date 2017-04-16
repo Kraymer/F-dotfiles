@@ -2,6 +2,8 @@
 
     └── packages.txt        Packages list
 
+---
+
 To create the packages list do :
 
     more /var/lib/apt/extended_states|grep -B 2 "Auto-Installed: 0"|grep Package|cut -d ":" -f 2|sed 's/ //g' > packages.txt

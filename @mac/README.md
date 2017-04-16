@@ -1,4 +1,4 @@
-## OS X specific setup
+**OS X specific setup**
  
     ├── .config
     │   └── .gitconfig.sec                I use same git credentials on my macs 

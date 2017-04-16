@@ -19,7 +19,7 @@ the [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/tree/master/attic/%40D
 
 ![attic last backup terminal info](https://raw.githubusercontent.com/Kraymer/bulkdata/master/F-dotfiles/attic_prompt.png)
 
-### Install notes
+## Install notes
     
     cd ~/F-dotfiles; stow stow  # install stow ignore file
     cd @mac; stow @macbook      # install machine package that declare $ATTIC* vars 

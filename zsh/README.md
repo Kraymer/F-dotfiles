@@ -22,5 +22,5 @@ Others packages define environment variables or functions by writing shell files
 
 ### Requirements
 
-`oh-my-zsh` <<https://github.com/robbyrussell/oh-my-zsh>>
-`powerlevel9k` <<https://github.com/bhilburn/powerlevel9k>>
+- `oh-my-zsh` <<https://github.com/robbyrussell/oh-my-zsh>>
+- `powerlevel9k` <<https://github.com/bhilburn/powerlevel9k>>

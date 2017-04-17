@@ -20,3 +20,7 @@ Others packages define environment variables or functions by writing shell files
 
 `~/.zsshenv` sources all **.zshenv* files present in `~/.zsh` subfolders at zsh startup, and `~/.zshrc` do the same with **.zsh* files.
 
+### Requirements
+
+`oh-my-zsh` <<https://github.com/robbyrussell/oh-my-zsh>>
+`powerlevel9k` <<https://github.com/bhilburn/powerlevel9k>>

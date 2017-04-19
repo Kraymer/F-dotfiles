@@ -3,12 +3,18 @@
 *F-dotfiles is an opiniated dotfiles organization scheme based on stow.   
 Highest priorities are ease of maintenance and deployment on both Linux and OS X.*
 
+- **`stow` powered:** symlink dotfiles and thus keep them always up-to-date in your repository
+- **topical organization:** organize dotfiles by application facilitating reuse across different machines
+- **clever naming scheme:** the repository architecture is easy to read while staying compatible with `stow` copy mechanism
+- **KISS:** there is deliberately none build script involved at all, the repository consist of dotfiles all installable using same modus operandu (`stow <directory>`)
+- **documentation *à propos*:** each package has a README.md which present its purpose and a flat `tree` view of its files. Install notes and requirements can also be listed. 
+
 ## Install
 
-- clone the repository : `git clone https://github.com/Kraymer/f-dotfiles.git ~/`  
-- execute `stow -t ~ stow` first, so that stow is properly configured for later dot files installs
+1. clone the repository : `git clone https://github.com/Kraymer/f-dotfiles.git ~/`
+1. edit configs at your convenience
+1. install desired package via `stow -t ~ <directory>`
 
-Then, edit around and install package via `stow <package_name>` command.  
 When needed, special install instructions are present in package `README.md` file.
 
 ## Guidelines

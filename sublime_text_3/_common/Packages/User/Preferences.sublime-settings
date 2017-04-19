@@ -12,6 +12,7 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Function Name Display",
 		"GitGutter",
 		"Vintage"
 	],

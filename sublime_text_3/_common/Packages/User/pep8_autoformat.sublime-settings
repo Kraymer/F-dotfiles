@@ -1,0 +1,20 @@
+{
+    // autoformat code on save ?
+    "autoformat_on_save": true,
+
+    // enable possibly unsafe changes (E226, E24, W6)
+    // aggressive level, 0 to disable:
+    "aggressive": 0,
+
+    // list codes for fixes; used by --ignore and --select
+    "list-fixes": false,
+
+    // do not fix these errors / warnings (e.g. [ "E501" , "E4" , "W"])
+    "ignore": [],
+
+    // select errors / warnings (e.g. ["E4", "W"])
+    "select": [],
+
+    // Maximum line length
+    "max-line-length": 99
+}

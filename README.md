@@ -31,7 +31,7 @@ When needed, special install instructions are present in package `README.md` fil
   [`@mac`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/), [`attic/@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx)
 - leading `_` for non packages, eg [`_homebrew`](https://github.com/Kraymer/F-dotfiles/blob/master/_homebrew) meaning that these directories must not be *stowed*
 
-Having a convention for subpackage naming enable us to setup stow properly so that subpackages are not symlinked when stowing parent package, see [example](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stow-global-ignore#L7). 
+Having a convention for subpackage naming enable us to write a [`.stow-global-ignore`](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stow-global-ignore#L7) file so that subpackages are not symlinked when stowing parent package, see 
 
 ### Ignore files
 

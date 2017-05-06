@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"AutoPEP8",
 		"BracketHighlighter",
 		"Dotfiles Syntax Highlighting",
 		"Function Name Display",

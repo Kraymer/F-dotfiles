@@ -1,0 +1,31 @@
+# To stash changes with a message
+git stash save "message"
+
+# To go 2 commits back
+git reset --hard HEAD~2
+
+# To remove untracked files
+git clean -f -d
+
+# To remove untracked and ignored files
+git clean -f -d -x
+
+# View commits that will be pushed
+git log @{u}..
+
+# View changes that are new on a feature branch
+git log -p feature --not master
+git diff master...feature
+
+# Interactive rebase for the last 7 commits
+git rebase -i @~7
+
+# View the content of an arbitrary stash
+git stash show -p stash@{1}
+
+# Move last n commits to a new branch
+# Note: Any changes not committed will be lost.
+# Note: newbranch must not exist beforehand!
+git branch newbranch      # Create a new branch, saving the desired commits
+git reset --hard HEAD~3   # Move master back by 3 commits (GONE from master)
+git checkout newbranch    # Go to the new branch that still has the desired commits

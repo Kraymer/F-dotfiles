@@ -1,0 +1,36 @@
+# Remove images from pdf
+cpdf -draft original.pdf -o version_without_images.pdf
+
+# Read in.pdf, select pages 1, 2, 3 and 6, and write those pages to
+# out.pdf
+cpdf in.pdf 1-3,6 -o out.pdf
+
+# Select the even pages (2, 4, 6...) from in.pdf and write those pages
+# to out.pdf
+cpdf in.pdf even -o out.pdf
+
+# Using AND to perform several operations in order, here merging two
+# files together and adding a copyright stamp to every page.
+cpdf -merge in.pdf in2.pdf AND -add-text "Copyright 2014" -o out.pdf
+
+# Merge in.pdf and in2.pdf into one document, writing to out.pdf.
+cpdf -merge in.pdf in2.pdf -o out.pdf
+
+# Split in.pdf into ten-page chunks, writing them to Chunk001.pdf,
+# Chunk002.pdf etc
+cpdf -split in.pdf -o Chunk%%%.pdf -chunk 10
+
+# Scale both the dimensions and contents of in.pdf by a factor of two
+# in x and y directions.
+cpdf -scale-page "2 2" in.pdf -o out.pdf
+
+# Rotate the contents of the pages in in.pdf by ninety degrees and
+# write to out.pdf.
+cpdf -rotate-contents 90 in.pdf -o out.pdf
+
+# Compress the data streams in in.pdf, writing the result to out.pdf.
+cpdf -compress in.pdf -o out.pdf
+
+# Decompress the data streams in in.pdf, writing to out.pdf.
+cpdf -decompress in.pdf -o out.pdf
+

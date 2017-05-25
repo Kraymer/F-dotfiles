@@ -20,3 +20,6 @@ for file in `ls original/image/path/`;
     new_file=`basename $new_path`;
     convert $file -resize 150 conerted/image/path/$new_file.png;
 done
+
+# Merge images to pdf
+convert *.jpg *.png *.JPG *.PNG output.pdf

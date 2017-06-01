@@ -13,3 +13,7 @@ dirwatch() {
             echo "$action $file"
         done
 }
+
+where() {
+    find . -name \*$1\*
+}

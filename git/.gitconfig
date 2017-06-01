@@ -26,13 +26,10 @@
     ui = true
 
 [diff]
-    tool = icdiff
+    tool = meld
 
 [difftool]
     prompt = false
-
-[difftool "icdiff"]
-    cmd = icdiff $LOCAL $REMOTE
 
 [gui]
     # Remove `git gui` pop-up warning
@@ -41,8 +38,14 @@
 [help]
     autocorrect = 1
 
+[merge]
+    tool = meld
+
 [mergetool]
     keepBackup = false
+
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
 
 [pull]
     rebase = true

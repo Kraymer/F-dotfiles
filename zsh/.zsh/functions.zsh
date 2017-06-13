@@ -17,3 +17,7 @@ dirwatch() {
 where() {
     find . -name \*$1\*
 }
+
+ssh() {
+	/usr/bin/ssh -t "$@" tmux new-session -A -s fabrice-session
+}

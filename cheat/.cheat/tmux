@@ -1,0 +1,52 @@
+# Zoom panel
+Ctrl-b z
+
+# Split vertically
+Ctrl-b |
+
+# Split horizontally
+Ctrl-b -
+
+# Change panel
+Ctrl-b <Arrow>
+
+# Detach from tmux:
+Ctrl-b d
+
+# Restore tmux session:
+tmux attach
+
+# Destroy window:
+Ctrl-b x
+
+# Detach an already attached session (great if you are moving devices with different screen resolutions)
+tmux attach -d 
+
+# Display session:
+tmux ls
+
+# Rename session:
+Ctrl-b $
+
+# Switch session:
+Ctrl-b s
+
+# Start a shared session:
+tmux -S /tmp/your_shared_session
+chmod 777 /tmp/your_shared_session
+
+# Help screen (Q to quit):
+Ctrl-b ?
+
+# Scroll in window:
+Ctrl-b PageUp/PageDown
+
+# Reload configuation file
+Ctrl-b : source-file /path/to/file
+
+# Window management
+# =================
+
+# Create window:
+Ctrl-b c
+

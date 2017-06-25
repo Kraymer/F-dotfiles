@@ -1,6 +1,6 @@
 # Reset prompt every minute to update hour
 TMOUT=60
-TRAPALRM() {
+TRAPALRM() {  # don't clear completion items on reset prompt
     if [ "$WIDGET" != "complete-word" ]; then
         zle reset-prompt
     fi

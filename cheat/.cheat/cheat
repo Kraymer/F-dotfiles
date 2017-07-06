@@ -1,0 +1,5 @@
+# Edit/create a cheatsheet for foobar binary
+cheat -e foobar
+
+# Search for cheatsheets related to clipboard feature
+cheat -s clipboard

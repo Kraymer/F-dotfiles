@@ -1,3 +1,6 @@
+# Which .gitignore rule is ignoring a file
+git check-ignore -v filename
+
 # To stash changes with a message
 git stash save "message"
 

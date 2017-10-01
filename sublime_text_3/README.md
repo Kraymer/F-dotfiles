@@ -4,7 +4,7 @@
     │   └── .config
     │       └── sublime-text-3
     │           └── Packages -> ../../../_common/Packages
-    ├── @osx
+    ├── @macos
     │   └── Library
     │       └── Application Support
     │           └── Sublime Text 3
@@ -23,5 +23,5 @@ Install the package corresponding to the target platform.
 
 ### Packages
 
-- [@linux](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux)
-- [@osx](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40osx)
+- [@linux](sublime_text_3/@linux)
+- [@macos](sublime_text_3/@macos)

@@ -13,7 +13,7 @@ Rock solid backup process in 3 steps :
 
 1. Run backup using `attic-backup.sh`, old archives are automatically pruned in case of successful backup.
 I recommend to use cron to plan the `attic-backup.sh` executions. For macOS users, a `launchd` service is provided by 
-the [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/tree/master/attic/%40Daemon-osx) subpackage.
+the [`@Daemon-macos`](@Daemon-macos) subpackage.
 
 1. zsh echoes date of last successfull backup at terminal startup, so you get alerted if something went haywire in your backup strategy.
 
@@ -24,4 +24,4 @@ the [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/tree/master/attic/%40D
     cd ~/F-dotfiles; stow stow  # install stow ignore file
     cd @mac; stow @macbook      # install machine package that declare $ATTIC* vars 
     cd ..; stow attic
-    cd attic; stow --target=/ @Daemon-osx
+    cd attic; stow --target=/ @Daemon-macos

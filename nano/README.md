@@ -1,3 +1,3 @@
-**Config file for `nano`<<http://nano-editor.org>> editor.**
+**Config file for `nano`<<https://nano-editor.org>> editor.**
 
     └── .nanorc

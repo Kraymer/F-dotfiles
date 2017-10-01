@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GroupName</key>
+	<string>staff</string>
+	<key>InitGroups</key>
+	<true/>
+	<key>Label</key>
+	<string>local.launched.attic</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>zsh</string>
+		<string>-i</string>
+		<string>-c</string>
+		<string>~/bin/attic-backup.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/local.launched.attic.stderr</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/local.launched.attic.stdout</string>
+	<key>StartInterval</key>
+	<integer>7200</integer>
+	<key>UserName</key>
+	<string>flap</string>
+</dict>
+</plist>

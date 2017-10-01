@@ -93,7 +93,7 @@ TERM xterm-termite
 #
 #
 # 256 color support
-# see here: http://www.mail-archive.com/bug-coreutils@gnu.org/msg11030.html)
+# see here: https://www.mail-archive.com/bug-coreutils@gnu.org/msg11030.html)
 #
 # Text 256 color coding:
 # 38;5;COLOR_NUMBER
@@ -261,7 +261,7 @@ EXEC 00;38;5;64
 .ra     00;38;5;166
 .wav    00;38;5;166
 .m4a    00;38;5;166
-# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+# https://wiki.xiph.org/MIME_Types_and_File_Extensions
 .axa    00;38;5;166
 .oga    00;38;5;166
 .spx    00;38;5;166
@@ -293,7 +293,7 @@ EXEC 00;38;5;64
 .m2ts   00;38;5;166
 .divx   00;38;5;166
 .webm   00;38;5;166
-# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+# https://wiki.xiph.org/MIME_Types_and_File_Extensions
 .axv 00;38;5;166
 .anx 00;38;5;166
 .ogv 00;38;5;166

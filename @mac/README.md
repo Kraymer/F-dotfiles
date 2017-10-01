@@ -13,5 +13,5 @@ Use subpackages for configuration specific to a mac instance.
 
 ### Subpackages
 
-- [@macbook](https://github.com/Kraymer/F-dotfiles/tree/master/%40mac/%40macbook)
-- [@macmini](https://github.com/Kraymer/F-dotfiles/tree/master/%40mac/%40macmini)
+- [@macbook](@macbook)
+- [@macmini](@macmini)

@@ -23,5 +23,5 @@ Install the package corresponding to the target platform.
 
 ### Packages
 
-- [@linux](sublime_text_3/@linux)
-- [@macos](sublime_text_3/@macos)
+- [@linux](@linux)
+- [@macos](@macos)

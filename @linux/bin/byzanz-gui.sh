@@ -1,9 +1,9 @@
 #!/bin/bash
  
-# AUTHOR:   (c) Rob W 2012, modified by MHC (http://askubuntu.com/users/81372/mhc)
+# AUTHOR:   (c) Rob W 2012, modified by MHC (https://askubuntu.com/users/81372/glutanimate)
 # NAME:     GIFRecord 0.1
 # DESCRIPTION:  A script to record GIF screencasts.
-# LICENSE:  GNU GPL v3 (http://www.gnu.org/licenses/gpl.html)
+# LICENSE:  GNU GPL v3 (https://www.gnu.org/licenses/gpl.html)
 # DEPENDENCIES:   byzanz,gdialog,notify-send (install via sudo add-apt-repository ppa:fossfreedom/byzanz; sudo apt-get update && sudo apt-get install byzanz gdialog notify-osd)
  
 # Time and date

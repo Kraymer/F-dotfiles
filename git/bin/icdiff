@@ -5,7 +5,7 @@
 Author: Jeff Kaufman, derived from difflib.HtmlDiff
 
 License: This code is usable under the same open terms as the rest of
-         python.  See: http://www.python.org/psf/license/
+         python.  See: https://docs.python.org/3/license.html
 
 """
 

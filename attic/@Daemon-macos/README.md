@@ -10,4 +10,4 @@ Please read [parent package instructions](https://github.com/Kraymer/F-dotfiles/
 
 ## Install notes
 
-    stow --target=/ @Daemon-osx
+    stow --target=/ @Daemon-macos

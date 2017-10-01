@@ -28,7 +28,7 @@ When needed, special install instructions are present in package `README.md` fil
 - titlecase for packages to install as root in `/`, eg
   [`@Daemon-macos`](attic/@Daemon-macos)
 - leading `@` for environment packages and subpackages, eg
-  [`@mac`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/), [`attic/@Daemon-macos`](attic/@Daemon-macos)
+  [`@mac`](@mac), [`attic/@Daemon-macos`](attic/@Daemon-macos)
 - leading `_` for non packages, eg [`_homebrew`](_homebrew) meaning that these directories must not be *stowed*
 
 Having a convention for subpackage naming enable us to write a [`.stow-global-ignore`](stow/.stow-global-ignore#L7) file so that subpackages are not symlinked when stowing parent package. 

@@ -26,12 +26,12 @@ When needed, special install instructions are present in package `README.md` fil
 
 - lowercase for packages to install in `$HOME` (the default)
 - titlecase for packages to install as root in `/`, eg
-  [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx)
+  [`@Daemon-macos`](attic/@Daemon-macos)
 - leading `@` for environment packages and subpackages, eg
-  [`@mac`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/), [`attic/@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx)
-- leading `_` for non packages, eg [`_homebrew`](https://github.com/Kraymer/F-dotfiles/blob/master/_homebrew) meaning that these directories must not be *stowed*
+  [`@mac`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/), [`attic/@Daemon-macos`](attic/@Daemon-macos)
+- leading `_` for non packages, eg [`_homebrew`](_homebrew) meaning that these directories must not be *stowed*
 
-Having a convention for subpackage naming enable us to write a [`.stow-global-ignore`](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stow-global-ignore#L7) file so that subpackages are not symlinked when stowing parent package. 
+Having a convention for subpackage naming enable us to write a [`.stow-global-ignore`](stow/.stow-global-ignore#L7) file so that subpackages are not symlinked when stowing parent package. 
 
 ### Ignore files
 
@@ -39,7 +39,7 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 > if Stow can create a single symlink that points to an entire subtree within the package tree, it will choose to do that rather than create a directory in the target tree and populate it with symlinks.
 
-`.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files, see [example](https://github.com/Kraymer/F-dotfiles/blob/master/sublime_text_3/.gitignore).
+`.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files, see [example](sublime_text_3/.gitignore).
 
 ### Secret files
 
@@ -48,7 +48,7 @@ Each secret file should be accompagnied by an *.example* file that is commited i
 
 Keep your secret files as short as possible to limit their influence as it complicates deployments (as they cannot be just pulled from github). 
 
-See [example](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/%40macbook/.config/.gitconfig.sec.example).
+See [example](@mac/@macbook/.config/.gitconfig.sec.example).
 
 ### Multi-platforms paths 
 
@@ -57,8 +57,8 @@ See [example](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/%40macboo
 The trick is to have one package per OS, just to create each specific directories structure properly.
 Then create the part of the filepath that is common to the two OS in `<package>/_common`, put the files in it, symlink from the subpackages to that location.
 
-Feel confused ? Check [example](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux/.config/sublime-text-3)
+Feel confused ? Check [example](sublime_text_3/@linux/.config/sublime-text-3)
 
 ---
-<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [.stowrc](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  
+<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [.stowrc](stow/.stowrc) [⤸](#a1)  
 <i id="f2">2</i> https://www.youtube.com/watch?v=ezQLP1dj_t8 [⤸](#a2)

@@ -1,4 +1,6 @@
 build-essential
+git-gui
+gitk
 graphviz
 grub-common
 grub2-common

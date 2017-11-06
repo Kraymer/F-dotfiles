@@ -9,6 +9,7 @@ libjpeg-dev
 libreadline-dev
 libssl-dev
 linux-headers-generic
+meld
 os-prober
 silversearcher-ag
 sqlite3

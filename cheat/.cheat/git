@@ -26,6 +26,12 @@ git rebase -i @~7
 # View the content of an arbitrary stash
 git stash show -p stash@{1}
 
+# To stash specific chunks
+git stash -p
+
+# To stash changes for specific files
+git stash push [--] [<pathspec>...]
+
 # Move last n commits to a new branch
 # Note: Any changes not committed will be lost.
 # Note: newbranch must not exist beforehand!

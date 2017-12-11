@@ -1,42 +1,42 @@
 {
-	"bold_folder_labels": true,
-	"caret_style": "phase",
-	"close_windows_when_empty": true,
-	"color_scheme": "Packages/User/Monokai (Flake8Lint).tmTheme",
-	"default_line_ending": "unix",
-	"detect_indentation": false,
-	"ensure_newline_at_eof_on_save": true,
-	"expand_tabs_on_save": true,
-	"folder_exclude_patterns":
-	[
-		"locale",
-		".svn",
-		".git",
-		".hg",
-		".tox",
-		"build"
-	],
-	"font_size": 11,
-	"highlight_line": true,
-	"hot_exit": false,
-	"ignored_packages":
-	[
-		"Function Name Display",
-		"GitGutter",
-		"Vintage"
-	],
-	"indent_guide_options":
-	[
-		"draw_active"
-	],
-	"indent_to_bracket": false,
-	"remember_open_files": true,
-	"rulers":
-	[
-		99
-	],
-	"scroll_past_end": true,
-	"tab_size": 4,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+    "bold_folder_labels": true,
+    "caret_style": "phase",
+    "close_windows_when_empty": true,
+    "color_scheme": "Packages/User/Monokai (Flake8Lint).tmTheme",
+    "default_line_ending": "unix",
+    "detect_indentation": false,
+    "ensure_newline_at_eof_on_save": true,
+    "expand_tabs_on_save": true,
+    "folder_exclude_patterns":
+    [
+        "locale",
+        ".svn",
+        ".git",
+        ".hg",
+        ".tox",
+        "build",
+    ],
+    "font_size": 11,
+    "highlight_line": true,
+    "hot_exit": false,
+    "ignored_packages":
+    [
+        "Function Name Display",
+        "GitGutter",
+        "Vintage"
+    ],
+    "indent_guide_options":
+    [
+        "draw_active"
+    ],
+    "indent_to_bracket": false,
+    "remember_open_files": true,
+    "rulers":
+    [
+        99
+    ],
+    "scroll_past_end": true,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
 }

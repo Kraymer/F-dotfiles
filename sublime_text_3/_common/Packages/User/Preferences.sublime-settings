@@ -15,6 +15,7 @@
         ".hg",
         ".tox",
         "build",
+        "node_modules",
     ],
     "font_size": 11,
     "highlight_line": true,

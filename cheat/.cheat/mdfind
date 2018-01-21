@@ -1,2 +1,2 @@
-# To find files:
-mdfind dile
+# Spotlight in the terminal.
+mdfind file

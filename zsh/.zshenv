@@ -1,9 +1,9 @@
 # .zshenv is always sourced, define here exported variables that should
 # be available to other programs.
 
+export VISUAL=subl
 export EDITOR=nano
 export PAGER=more
-
 export PATH=$PATH:~/bin:/usr/local/bin
 
 # load zsh config files

@@ -1,3 +1,4 @@
+# files to source in priority
 source ~/.oh_my.zsh
 
 # load zsh config files

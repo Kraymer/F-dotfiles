@@ -1,0 +1,5 @@
+# Print file metadata etc.
+ffmpeg -i path/to/file.ext
+
+# Rotate video
+ffmpeg -i input.m4v -metadata:s:v rotate="90" -codec copy output.m4v

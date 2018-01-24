@@ -1,5 +1,5 @@
 # Stash specific files
-git stash push [--] [<pathspec>...]
+git stash push -m <message> [--] [<pathspec>...]
 
 # Which .gitignore rule is ignoring a file
 git check-ignore -v filename

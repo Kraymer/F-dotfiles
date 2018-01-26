@@ -35,6 +35,9 @@ git stash -p
 # To stash changes for specific files
 git stash push [--] [<pathspec>...]
 
+# Delete all remote branches that have been merged
+git branch -a --merged remotes/origin/master | grep -v master | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin
+
 # Move last n commits to a new branch
 # Note: Any changes not committed will be lost.
 # Note: newbranch must not exist beforehand!

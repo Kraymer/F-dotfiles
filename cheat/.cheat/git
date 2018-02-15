@@ -7,6 +7,9 @@ git check-ignore -v filename
 # To stash changes with a message
 git stash save "message"
 
+# Highlight lines written at specific date when using git blame
+git blame README.md|ack --nogroup --passthru '.*(?:2017-05|2016).*?\)'
+
 # To go 2 commits back
 git reset --hard HEAD~2
 

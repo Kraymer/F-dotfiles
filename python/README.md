@@ -3,7 +3,7 @@
     ├── .config
     │   └── flake8
     ├── .pylintrc
-    ├──.pystartup	      Enable python interpreter history
+    ├── .pystartup	      Enable python interpreter history
     └── .zsh
         └── python.zsh    Setup PATH, source venv
         

@@ -5,3 +5,5 @@
         ├── gifsicle
         ├── mdfind
         └── ...
+    └── ..zsh
+        └── cheat.zsh         # activate colors

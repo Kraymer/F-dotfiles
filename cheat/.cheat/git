@@ -1,11 +1,8 @@
-# Stash specific files
-git stash push -m <message> [--] [<pathspec>...]
+# File paternity test. Who is the author of the more lines, as returned by git blame.
+git blame FILE|cut -f 2 -d " "|sort|uniq -c|sort -rn|head -n 1
 
 # Which .gitignore rule is ignoring a file
 git check-ignore -v filename
-
-# To stash changes with a message
-git stash save "message"
 
 # Highlight lines written at specific date when using git blame
 git blame README.md|ack --nogroup --passthru '.*(?:2017-05|2016).*?\)'
@@ -16,14 +13,8 @@ git log --oneline --pretty=format:"%h%x09%an%x09%s" --no-merges `git describe --
 # To go 2 commits back
 git reset --hard HEAD~2
 
-# To remove untracked files
+# To remove untracked files. Add '-x' to remove ignored files too.
 git clean -f -d
-
-# To remove untracked and ignored files
-git clean -f -d -x
-
-# View commits that will be pushed
-git log @{u}..
 
 # View changes that are new on a feature branch
 git log -p feature --not master
@@ -31,15 +22,6 @@ git diff master...feature
 
 # Interactive rebase for the last 7 commits
 git rebase -i @~7
-
-# View the content of an arbitrary stash
-git stash show -p stash@{1}
-
-# To stash specific chunks
-git stash -p
-
-# To stash changes for specific files
-git stash push [--] [<pathspec>...]
 
 # Delete all remote branches that have been merged
 git branch -a --merged remotes/origin/master | grep -v master | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin

@@ -1,0 +1,14 @@
+# Stash specific files
+git stash push -m <message> [--] [<pathspec>...]
+
+# To stash changes with a message
+git stash save "message"
+
+# View the content of an arbitrary stash
+git stash show -p stash@{1}
+
+# To stash specific chunks
+git stash -p
+
+# To stash changes for specific files
+git stash push [--] [<pathspec>...]

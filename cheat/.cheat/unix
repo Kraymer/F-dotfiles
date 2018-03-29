@@ -1,2 +1,5 @@
 # Delete *pyc files recursively
 find . -name \*.pyc -delete
+
+# rsync copy with global progress indication
+rsync -ra --info=progress2 --no-i-r SRC TARGET

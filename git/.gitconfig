@@ -12,9 +12,7 @@
 # From there, sections are in alphabetic order
 
 [alias]
-    branch-name = "!git rev-parse --abbrev-ref HEAD"
     co = "!f() { git checkout \"$@\" && git stash list | grep \"$1:\"; }; f"
-    recreate = "!f() { [[ -n $@ ]] && git checkout \"$@\" &&  \"$@\" && git checkout -b \"$@\" && git publish; }; f"
     last = log -1 HEAD
     st = status
     uncommit = reset --soft HEAD~

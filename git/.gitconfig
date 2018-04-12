@@ -4,7 +4,7 @@
 
 [user]
     name = Fabrice Laporte
-
+    email = fabrice@yescapa.com
 [core]
     editor = nano
     excludesfile = ~/.gitignore
@@ -12,8 +12,10 @@
 # From there, sections are in alphabetic order
 
 [alias]
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    co = "!f() { git checkout \"$@\" && git stash list | grep \"$1:\"; }; f"
+    recreate = "!f() { [[ -n $@ ]] && git checkout \"$@\" &&  \"$@\" && git checkout -b \"$@\" && git publish; }; f"
     last = log -1 HEAD
-    co = checkout
     st = status
     uncommit = reset --soft HEAD~
     unstage = reset HEAD --

@@ -16,6 +16,9 @@ git reset --hard HEAD~2
 # To remove untracked files. Add '-x' to remove ignored files too.
 git clean -f -d
 
+# List all commits for a specific file
+git log --follow filename
+
 # View changes that are new on a feature branch
 git log -p feature --not master
 git diff master...feature
@@ -24,7 +27,7 @@ git diff master...feature
 git rebase -i @~7
 
 # Delete all remote branches that have been merged
-git branch -a --merged remotes/origin/master | grep -v master | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin
+git branch -a --merged remotes/origin/master | grep -Ev "master|hotfix|develop" | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin
 
 # Move last n commits to a new branch
 # Note: Any changes not committed will be lost.

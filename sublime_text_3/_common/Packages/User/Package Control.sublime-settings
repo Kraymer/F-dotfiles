@@ -9,15 +9,18 @@
 		"BracketHighlighter",
 		"Dotfiles Syntax Highlighting",
 		"Function Name Display",
+		"GitGutter",
 		"Monokai Extended",
 		"Package Control",
 		"Pretty JSON",
+		"Print to HTML",
 		"Python Flake8 Lint",
 		"Python Imports Sorter",
 		"Python PEP8 Autoformat",
 		"requirementstxt",
 		"Sass",
 		"SideBarEnhancements",
-		"SublimeLinter-flake8"
+		"SublimeLinter-flake8",
+		"Trimmer"
 	]
 }

@@ -26,3 +26,6 @@ convert *.jpg *.png *.JPG *.PNG output.pdf
 
 # Make animated gif from pictures
 convert -loop 0 -delay 100 in1.png in2.png out.gif
+
+# Remove transparent border
+convert in.png -trim +repage out.png

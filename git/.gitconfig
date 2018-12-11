@@ -3,11 +3,12 @@
     path = ~/.config/.gitconfig.sec
 
 [user]
-    name = Fabrice Laporte
-    email = fabrice@yescapa.com
+	name = fabrice
+	email = fabrice@yescapa.com
 [core]
     editor = nano
     excludesfile = ~/.gitignore
+
 
 # From there, sections are in alphabetic order
 
@@ -47,11 +48,5 @@
 [mergetool "meld"]
     cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
 
-[pull]
-    rebase = true
-
 [push]
     default = simple
-
-[rebase]
-    autoStash = true

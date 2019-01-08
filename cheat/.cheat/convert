@@ -29,3 +29,6 @@ convert -loop 0 -delay 100 in1.png in2.png out.gif
 
 # Remove transparent border
 convert in.png -trim +repage out.png
+
+# Convert color to alpha
+convert input.png -fuzz 10% -fill none -draw "matte 0,0 replace" output.png

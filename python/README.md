@@ -10,3 +10,8 @@
 ### Requirements
 
 `virtualenvwrapper` <<https://virtualenvwrapper.readthedocs.io/en/latest/>>
+
+### Using `direnv` to sandbox a project's dependencies
+
+    $ cd myproject
+    $ echo "layout python" > .envrc

@@ -7,3 +7,10 @@ git_commits_on_files() {
       echo "$REV $FILEPATH" | grep $1
     done
 }
+
+git_filesize() {
+git log $1 | grep "^commit" | cut -f2 -d" " | while read hash; do
+   echo -n "$hash -- "
+   git show $hash:$1 | wc -c
+done
+}

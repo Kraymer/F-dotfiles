@@ -1,0 +1,2 @@
+# rename extensions of files
+rename -S .CR2 .jpg *.CR2

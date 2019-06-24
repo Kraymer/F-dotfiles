@@ -1,0 +1,3 @@
+# restart postgres server on mac
+pg_ctl -D /usr/local/var/postgres start
+

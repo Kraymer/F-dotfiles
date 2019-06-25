@@ -1,0 +1,14 @@
+beets
+cffi
+cheat
+colorama
+futures
+gnureadline
+nose
+percol
+Pygments
+pyOpenSSL
+spotify-ripper-morgaroth
+subliminal
+Unidecode
+virtualenv

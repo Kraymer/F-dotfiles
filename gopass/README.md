@@ -1,6 +1,10 @@
 # Gopass
-              
-    └── config.yml 
+
+~~~
+└── .config
+    └── gopass
+        └── config.yml
+~~~
     
 Configuration for [gopass](https://github.com/gopasspw/gopass).  
 When installing on a new machine either add a new gpg key using `recipient add` command or install an authorized existing one using `gpg --import my_secret.key`.  

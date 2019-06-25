@@ -1,0 +1,18 @@
+root:
+  askformore: false
+  autoclip: true
+  autoprint: false
+  autoimport: true
+  autosync: false
+  check_recipient_hash: false
+  cliptimeout: 45
+  concurrency: 2
+  editrecipients: false
+  nocolor: false
+  noconfirm: true
+  nopager: false
+  notifications: true
+  path: gpgcli-gitcli-fs+file:///home/flap/.password-store
+  safecontent: false
+  usesymbols: false
+mounts: {}

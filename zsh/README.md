@@ -28,4 +28,5 @@ Others packages define environment variables or functions by writing shell files
 ### Oh-my-zsh external plugins
 
 - `zsh-autosuggestions` https://github.com/zsh-users/zsh-autosuggestions
-- `zsh-syntax-highlighting` oh-my-zsh https://github.com/zsh-users/zsh-syntax-highlighting
+- `zsh-syntax-highlighting` https://github.com/zsh-users/zsh-syntax-highlighting
+- `zsh-history-substring-search` https://github.com/zsh-users/zsh-history-substring-search

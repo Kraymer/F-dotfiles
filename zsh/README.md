@@ -24,3 +24,8 @@ Others packages define environment variables or functions by writing shell files
 
 - `oh-my-zsh` <<https://github.com/robbyrussell/oh-my-zsh>>
 - `powerlevel9k` <<https://github.com/bhilburn/powerlevel9k>>
+
+# Oh-my-zsh external plugins
+
+- `zsh-autosuggestions` https://github.com/zsh-users/zsh-autosuggestions
+- `zsh-syntax-highlighting` oh-my-zsh https://github.com/zsh-users/zsh-syntax-highlighting

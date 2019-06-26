@@ -1,0 +1,4 @@
+// These settings override both User and Default settings for the Markdown syntax
+{
+    "trim_automatic_white_space": false, 
+}

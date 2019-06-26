@@ -1,0 +1,8 @@
+{
+        // git_gutter settings
+        "focus_change_mode": false,
+        "live_mode": false,
+        "git_gutter_live_mode": false,
+        "git_gutter_ignore_whitespace": "space",
+        "show_line_annotation": false,
+}

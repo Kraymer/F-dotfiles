@@ -1,3 +1,5 @@
-!_common/Packages/User/*settings
 _common/Packages/User/*
-*/Cache/*
+!_common/Packages/User/*settings
+
+@linux/.config/sublime-text-3/**/*
+!@linux/.config/sublime-text-3/Packages

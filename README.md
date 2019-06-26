@@ -19,8 +19,8 @@ When needed, special install instructions are present in package `README.md` fil
 
 ## Rules
 
-> *Walter -* That rules really tie the repo together, do they not?
-> *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>
+> *Walter -* That rules really tie the repo together, do they not?  
+> *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>  
 
 ### Documentation
 
@@ -28,7 +28,7 @@ Dotfiles repositories are often grimoire-like, collection of ancient formulas.
 I make the effort of documenting each package because the few infos given in
 the `README.md` add up and can save a lot of time when configuring a new machine from scratch.
 
-Each package has a *README.md* which present its purpose and a flat `tree` view of its files.
+Each package has a `README.md` which present its purpose and a flat `tree` view of its files.
 Install notes and requirements can also be listed.
 
 ### Directories naming

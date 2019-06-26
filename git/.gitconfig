@@ -3,7 +3,7 @@
     path = ~/.config/.gitconfig.sec
 
 [user]
-	name = fabrice
+	name = Fabrice
 	email = fabrice@yescapa.com
 [core]
     editor = nano

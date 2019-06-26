@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"AutoPEP8",
 		"BracketHighlighter",
 		"Dotfiles Syntax Highlighting",
 		"Function Name Display",
@@ -20,7 +19,6 @@
 		"requirementstxt",
 		"Sass",
 		"SideBarEnhancements",
-		"SublimeLinter-flake8",
 		"Trimmer"
 	]
 }

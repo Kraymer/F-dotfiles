@@ -1,4 +1,4 @@
-![F-dotfiles banner](https://raw.githubusercontent.com/Kraymer/bulkdata/master/F-dotfiles/banner.png)
+![F-dotfiles banner](https://raw.githubusercontent.com/Kraymer/public/master/F-dotfiles/banner.png)
 
 *F-dotfiles is an opiniated dotfiles organization scheme based on stow.
 Highest priorities are ease of maintenance and deployment on both Linux and OS X.*

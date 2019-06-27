@@ -1,4 +1,4 @@
-**`Sublime Text 3` <<https://www.sublimetext.com>> *the text editor you'll fall in love with*.**
+## [`Sublime Text 3`](https://www.sublimetext.com), *the text editor you'll fall in love with*
 
 ~~~
     ~

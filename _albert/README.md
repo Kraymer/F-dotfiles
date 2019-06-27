@@ -4,7 +4,7 @@
 
 https://albertlauncher.github.io/docs/installing/
 
-## Python plugins
+### Python plugins
 
 See install instructions at https://github.com/albertlauncher/python
 

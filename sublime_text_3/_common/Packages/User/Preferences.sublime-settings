@@ -24,7 +24,9 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"BracketHighlighter",
 		"Function Name Display",
+		"GitGutter",
 		"Vintage"
 	],
 	"indent_guide_options":

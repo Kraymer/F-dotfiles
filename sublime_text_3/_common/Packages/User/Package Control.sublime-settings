@@ -2,6 +2,8 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"BracketHighlighter",
+		"GitGutter"
 	],
 	"installed_packages":
 	[
@@ -12,6 +14,7 @@
 		"Monokai Extended",
 		"Package Control",
 		"Pretty JSON",
+		"Pretty YAML",
 		"Print to HTML",
 		"Python Flake8 Lint",
 		"Python Imports Sorter",

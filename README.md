@@ -1,7 +1,14 @@
+## F-dotfiles
+
 ![F-dotfiles banner](https://raw.githubusercontent.com/Kraymer/public/master/F-dotfiles/banner.png)
 
-*F-dotfiles is an opiniated dotfiles organization scheme based on stow.
-Highest priorities are ease of maintenance and deployment on both Linux and OS X.*
+> **/ɛfdɒtfaɪlz/** :
+>
+> *n. Full-fledged-Über-Clean-Kraymer dotfiles.* An opiniated dotfiles organization scheme based on stow.
+Highest priorities are ease of maintenance and deployment on both Linux and OS X.
+
+
+## Features
 
 - **`stow` powered:** symlink dotfiles and thus keep them always up-to-date in your repository
 - **topical organization:** organize dotfiles by application facilitating reuse across different machines

@@ -5,7 +5,7 @@
 > **/ɛfdɒtfaɪlz/** :
 >
 > *n.* stands for *Full-fledged-Über-Clean-Kraymer dotfiles.* An opiniated dotfiles organization scheme based on stow.
-Highest priorities are ease of maintenance and deployment on both Linux and OS X.
+Focus is put on up-to-date documentation, ease of maintenance and deployment on both Linux and OS X.
 
 
 ## Features

@@ -9,3 +9,5 @@ do
 done
 
 eval "$(direnv hook zsh)"
+
+tmux new-session -A -s main

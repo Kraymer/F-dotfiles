@@ -1,6 +1,7 @@
 **Setup for `ST3` <<https://www.sublimetext.com>> *the text editor you'll fall in love with*.**
 
-    ├── _common
+~~~
+    ├── _common
     │   └── Packages
     │       ├── backrefs
     │       ├── markupsafe
@@ -16,14 +17,13 @@
     │       ├── pyyaml
     │       ├── SublimeFunctionNameDisplay
     │       └── User
-    ├── .gitignore
     ├── @linux
     │   └── .config
     │       └── sublime-text-3
     └── @osx
         └── Library
-            └── Application Support
-
+            └── Application Support
+~~~
 
 ### Install notes
 

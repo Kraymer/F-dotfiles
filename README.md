@@ -1,6 +1,6 @@
-## F-dotfiles
-
 ![F-dotfiles banner](https://raw.githubusercontent.com/Kraymer/public/master/F-dotfiles/banner.png)
+
+## F-dotfiles
 
 > **/ɛfdɒtfaɪlz/** :
 >

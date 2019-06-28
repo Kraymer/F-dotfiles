@@ -1,0 +1,3 @@
+# Using direnv to sandbox a project's dependencies
+cd myproject
+echo "layout python" > .envrc

@@ -3,10 +3,13 @@
 This package helps you streamline your Attic backup strategy.
 
     ├── .zsh
-    │   └── functions_attic.zsh    Display last backup date in your terminal
+    │   └── functions_attic.zsh   
     └── bin
-        └── attic-backup.sh        Create new attic archive and prune existing ones
+        └── attic-backup.sh        
 
+ - `zsh/functions_attic.zsh`: display last backup date in your terminal  
+ - `bin/attic-backup.sh`: create new attic archive and prune existing ones
+ 
 ## Instructions
 
 Rock solid backup process in 3 steps :

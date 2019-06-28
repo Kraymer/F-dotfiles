@@ -38,3 +38,6 @@ git checkout newbranch    # Go to the new branch that still has the desired comm
 
 # Revert merge commit
 git revert -m 1 <merge_commit_SHA1>
+
+# Search for a string in whole repository history
+git log -Spassword

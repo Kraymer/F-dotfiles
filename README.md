@@ -8,7 +8,7 @@
 Great effort is put on up-to-date documentation, ease of maintenance and deployment on both Linux and OS X.
 
 
-## 𐌅eatures
+## 𐌅 eatures
 
 - **`stow` powered:** symlink dotfiles and thus keep them always up-to-date in your repository
 - **topical organization:** organize dotfiles by application facilitating reuse across different machines

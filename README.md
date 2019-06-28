@@ -67,10 +67,11 @@ These files are prominently listed in the package `README.md` next to a ⚠ symb
 
 **Where to save a file that is installed at different locations depending on the OS ?**
 
-For example, let's say_ you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.
-Put the shared part of filepaths in a shared subpackage : `myapp/_common/myapp/spam.conf`
-Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge :
-`myapp/@linux/.config -> ../ _common/myapp/`
+For example, let's say_ you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.  
+
+Put the shared part of filepaths in a shared subpackage : `myapp/_common/myapp/spam.conf`  
+Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge :  
+`myapp/@linux/.config -> ../ _common/myapp/`  
 `myapp/@macOS/Library -> ../ _common/myapp/`
 
 Feel confused ? Check [`sublime_text_3` example](https://github.com/Kraymer/F-dotfiles/tree/master/_sublime_text_3/%40linux/.config/sublime-text-3)

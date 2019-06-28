@@ -11,5 +11,5 @@
     └── functions_git.zsh
 ~~~
 
-- :warning: `.gitconfig.local`: non-tracked local file to enter your credentials
+- `.gitconfig.local` :warning: : non-tracked local file to enter your credentials
 - `functions_git.zsh`: bash functions executing advanced git routines

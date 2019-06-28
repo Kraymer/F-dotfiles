@@ -1,4 +1,4 @@
-## `Cheat`](https://github.com/chrisallenlane/cheat)
+## [`Cheat`](https://github.com/chrisallenlane/cheat)
 
 My cheatsheets.
 

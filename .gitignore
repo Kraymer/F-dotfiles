@@ -1,11 +1,6 @@
-**/sec/**/*.zsh
-**/sec/**/*.zshenv
 *.sec*
+*.local
 .DS_Store
 /bin/
 !README.md
 !*example
-/Backup/ 
-
-# packages that should not be pushed on github (local backup only)
-qifqif/

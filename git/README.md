@@ -3,7 +3,8 @@
 ~~~
 ~
 ├── .config
-│   └── .gitconfig.local
+│   └── git
+│       └── .gitconfig.local
 ├── .gitconfig
 ├── .gitignore
 └── .zsh

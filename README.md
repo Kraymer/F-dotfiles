@@ -1,7 +1,14 @@
 ![F-dotfiles banner](https://raw.githubusercontent.com/Kraymer/public/master/F-dotfiles/banner.png)
 
-*F-dotfiles is an opiniated dotfiles organization scheme based on stow.
-Highest priorities are ease of maintenance and deployment on both Linux and OS X.*
+# F-dotfiles
+
+> **/ɛfdɒtfaɪlz/** :
+>
+> *n.* stands for *Full-fledged-Über-Clean-Kraymer dotfiles.* An opiniated dotfiles organization scheme based on stow.
+Focus is put on up-to-date documentation, ease of maintenance and deployment on both Linux and OS X.
+
+
+## :fleur_de_lis: Features
 
 - **`stow` powered:** symlink dotfiles and thus keep them always up-to-date in your repository
 - **topical organization:** organize dotfiles by application facilitating reuse across different machines
@@ -9,7 +16,7 @@ Highest priorities are ease of maintenance and deployment on both Linux and OS X
 - **KISS:** there is deliberately none build script involved at all, the repository consist of dotfiles all installable using same modus operandi (`stow <directory>`)
 
 
-## Install
+## :fleur_de_lis: Install
 
 1. clone the repository : `git clone https://github.com/Kraymer/F-dotfiles.git ~/ ; cd ~/F-dotfiles`
 1. setup `stow`, *inception style* : `stow -t ~ stow` 
@@ -17,7 +24,7 @@ Highest priorities are ease of maintenance and deployment on both Linux and OS X
 
 When needed, special install instructions are present in package `README.md` file.
 
-## Rules
+## :fleur_de_lis: Rules
 
 > *Walter -* That rules really tie the repo together, do they not?  
 > *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>  

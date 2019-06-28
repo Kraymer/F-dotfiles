@@ -1,10 +1,15 @@
-**This package helps you streamline your [`Attic`](https://attic-backup.org/) <<https://attic-backup.org/>>  backup strategy.**
+## [`Attic`](https://attic-backup.org/)
+
+This package helps you streamline your Attic backup strategy.
 
     ├── .zsh
-    │   └── functions_attic.zsh    Display last backup date in your terminal
+    │   └── functions_attic.zsh   
     └── bin
-        └── attic-backup.sh        Create new attic archive and prune existing ones
+        └── attic-backup.sh        
 
+ - `zsh/functions_attic.zsh`: display last backup date in your terminal  
+ - `bin/attic-backup.sh`: create new attic archive and prune existing ones
+ 
 ## Instructions
 
 Rock solid backup process in 3 steps :
@@ -19,7 +24,7 @@ the [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/tree/master/attic/%40D
 
 ![attic last backup terminal info](https://raw.githubusercontent.com/Kraymer/bulkdata/master/F-dotfiles/attic_prompt.png)
 
-## Install notes
+### Install notes
     
     cd ~/F-dotfiles; stow stow  # install stow ignore file
     cd @mac; stow @macbook      # install machine package that declare $ATTIC* vars 

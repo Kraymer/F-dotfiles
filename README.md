@@ -4,8 +4,8 @@
 
 > **/ɛfdɒtfaɪlz/** :
 >
-> *n.* stands for *Full-fledged-Über-Clean-Kraymer dotfiles.* An opiniated dotfiles organization scheme based on stow.
-Focus is put on up-to-date documentation, ease of maintenance and deployment on both Linux and OS X.
+> *n.* stands for *Full-fledged-Über-Clean-Kraymer dotfiles.*, an opiniated dotfiles organization scheme based on stow.
+Great effort is put on up-to-date documentation, ease of maintenance and deployment on both Linux and OS X.
 
 
 ## Features
@@ -41,11 +41,11 @@ Install notes and requirements can also be listed.
 ### Directories naming
 
 - lowercase for packages to install in `$HOME` (the default)
-- titlecase for packages to install as root in `/`, eg
-  [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx)
-- leading `@` for environment packages and subpackages, eg
-  [`@mac`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/), [`attic/@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx)
-- leading `_` for non packages, eg [`_homebrew`](https://github.com/Kraymer/F-dotfiles/blob/master/_homebrew) meaning that these directories must not be *stowed*
+- titlecase for packages to install as root in `/` (eg
+  [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx))
+- leading `@` for environment packages and subpackages (eg
+  [`@mac`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/), [`attic/@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx))
+- leading `_` for non packages meaning that these directories must not be *stowed* (eg [`_homebrew`](https://github.com/Kraymer/F-dotfiles/blob/master/_homebrew)) 
 
 Having a convention for subpackage naming enable us to write a [`.stow-global-ignore`](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stow-global-ignore#L7) file so that subpackages are not symlinked when stowing parent package.
 
@@ -59,17 +59,21 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 ### Secret files
 
-Secret files, ie files that should not be commited/published, must have *.sec* or */sec/* in their filepath to be ignored by the root `.gitignore` file.
+Secret files, ie files that should not be commited/published, must have a *.local* extension to be ignored by the root `.gitignore` file.  
+These files are prominently listed in the package `README.md` next to a ⚠ symbol.
 
 
 ### Multi-platforms paths
 
 **Where to save a file that is installed at different locations depending on the OS ?**
 
-The trick is to have one package per OS, just to create each specific directories structure properly.
-Then create the part of the filepath that is common to the two OS in `<package>/_common`, put the files in it, symlink from the subpackages to that location.
+For example, let's say_ you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.
+Put the shared part of filepaths in a shared subpackage : `myapp/_common/myapp/spam.conf`
+Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge :
+`myapp/@linux/.config -> ../ _common/myapp/`
+`myapp/@macOS/Library -> ../ _common/myapp/`
 
-Feel confused ? Check [example](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux/.config/sublime-text-3)
+Feel confused ? Check [`sublime_text_3` example](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux/.config/sublime-text-3)
 
 ---
 <i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [.stowrc](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  

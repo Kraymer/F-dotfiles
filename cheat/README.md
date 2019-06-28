@@ -19,6 +19,7 @@ My cheatsheets.
 │   ├── mdfind
 │   ├── nano
 │   ├── psql
+│   ├── python
 │   ├── sips
 │   ├── sublimetext3
 │   ├── tmux

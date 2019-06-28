@@ -8,7 +8,7 @@
 Great effort is put on up-to-date documentation, ease of maintenance and deployment on both Linux and OS X.
 
 
-## Features
+## 𐌅 eatures
 
 - **`stow` powered:** symlink dotfiles and thus keep them always up-to-date in your repository
 - **topical organization:** organize dotfiles by application facilitating reuse across different machines
@@ -16,7 +16,7 @@ Great effort is put on up-to-date documentation, ease of maintenance and deploym
 - **KISS:** there is deliberately none build script involved at all, the repository consist of dotfiles all installable using same modus operandi (`stow <directory>`)
 
 
-## Install
+## 𐌆 nstall
 
 1. clone the repository : `git clone https://github.com/Kraymer/F-dotfiles.git ~/ ; cd ~/F-dotfiles`
 1. setup `stow`, *inception style* : `stow -t ~ stow` 
@@ -24,12 +24,12 @@ Great effort is put on up-to-date documentation, ease of maintenance and deploym
 
 When needed, special install instructions are present in package `README.md` file.
 
-## Rules
+## 𐌕 he Rules
 
 > *Walter -* That rules really tie the repo together, do they not?  
 > *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>  
 
-### Documentation
+### ⒜ Documentation
 
 Dotfiles repositories are often grimoire-like, collection of ancient formulas.
 I make the effort of documenting each package because the few infos given in
@@ -38,7 +38,7 @@ the `README.md` add up and can save a lot of time when configuring a new machine
 Each package has a `README.md` which present its purpose and a flat `tree` view of its files.
 Install notes and requirements can also be listed.
 
-### Directories naming
+### ⒝ Directories naming
 
 - lowercase for packages to install in `$HOME` (the default)
 - titlecase for packages to install as root in `/` (eg
@@ -49,7 +49,7 @@ Install notes and requirements can also be listed.
 
 Having a convention for subpackage naming enable us to write a [`.stow-global-ignore`](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stow-global-ignore#L7) file so that subpackages are not symlinked when stowing parent package.
 
-### Ignore files
+### ⒞ Ignore files
 
 Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/Installing-Packages.html#Installing-Packages) :
 
@@ -57,20 +57,19 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 `.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files, see [example](https://github.com/Kraymer/F-dotfiles/blob/master/_sublime_text_3/.gitignore).
 
-### Secret files
+### ⒟ Secret files
 
-Secret files, ie files that should not be commited/published, must have a *.local* extension to be ignored by the root `.gitignore` file.  
+Secret files, ie files that should not be commited/published once edited, must have a *.local* extension to be ignored by the root `.gitignore` file.  
 These files are prominently listed in the package `README.md` next to a ⚠ symbol.
 
 
-### Multi-platforms paths
+### ⒠ Multi-platforms paths
 
-**Where to save a file that is installed at different locations depending on the OS ?**
+For example, let's say_ you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.  
 
-For example, let's say_ you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.
-Put the shared part of filepaths in a shared subpackage : `myapp/_common/myapp/spam.conf`
-Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge :
-`myapp/@linux/.config -> ../ _common/myapp/`
+Put the shared part of filepaths in a shared subpackage : `myapp/_common/myapp/spam.conf`  
+Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge :  
+`myapp/@linux/.config -> ../ _common/myapp/`  
 `myapp/@macOS/Library -> ../ _common/myapp/`
 
 Feel confused ? Check [`sublime_text_3` example](https://github.com/Kraymer/F-dotfiles/tree/master/_sublime_text_3/%40linux/.config/sublime-text-3)

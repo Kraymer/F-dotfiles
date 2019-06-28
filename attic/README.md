@@ -7,7 +7,7 @@ This package helps you streamline your Attic backup strategy.
     └── bin
         └── attic-backup.sh        Create new attic archive and prune existing ones
 
-##" Instructions
+## Instructions
 
 Rock solid backup process in 3 steps :
 

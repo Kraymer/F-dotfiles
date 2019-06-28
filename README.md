@@ -65,8 +65,6 @@ These files are prominently listed in the package `README.md` next to a ⚠ symb
 
 ### Multi-platforms paths
 
-**Where to save a file that is installed at different locations depending on the OS ?**
-
 For example, let's say_ you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.  
 
 Put the shared part of filepaths in a shared subpackage : `myapp/_common/myapp/spam.conf`  

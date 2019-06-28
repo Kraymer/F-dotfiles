@@ -8,7 +8,7 @@
 Focus is put on up-to-date documentation, ease of maintenance and deployment on both Linux and OS X.
 
 
-## ӝ Features
+## Features
 
 - **`stow` powered:** symlink dotfiles and thus keep them always up-to-date in your repository
 - **topical organization:** organize dotfiles by application facilitating reuse across different machines
@@ -16,7 +16,7 @@ Focus is put on up-to-date documentation, ease of maintenance and deployment on 
 - **KISS:** there is deliberately none build script involved at all, the repository consist of dotfiles all installable using same modus operandi (`stow <directory>`)
 
 
-## ӝ Install
+## Install
 
 1. clone the repository : `git clone https://github.com/Kraymer/F-dotfiles.git ~/ ; cd ~/F-dotfiles`
 1. setup `stow`, *inception style* : `stow -t ~ stow` 
@@ -24,7 +24,7 @@ Focus is put on up-to-date documentation, ease of maintenance and deployment on 
 
 When needed, special install instructions are present in package `README.md` file.
 
-## ӝ Rules
+## Rules
 
 > *Walter -* That rules really tie the repo together, do they not?  
 > *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>  

@@ -1,12 +1,8 @@
 # Local/private config goes in the include
 [include]
-    path = ~/.config/.gitconfig.sec
-
-[user]
-	name = Fabrice
-	email = fabrice@yescapa.com
+    path = ~/.config/.gitconfig.local
 [core]
-    editor = nano
+    editor = micro
     excludesfile = ~/.gitignore
 
 

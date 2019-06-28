@@ -1,4 +1,5 @@
 build-essential
+direnv
 git-gui
 gitk
 graphviz

@@ -16,7 +16,7 @@ Great effort is put on up-to-date documentation, ease of maintenance and deploym
 - **KISS:** there is deliberately none build script involved at all, the repository consist of dotfiles all installable using same modus operandi (`stow <directory>`)
 
 
-## 𐌆nstall
+## 𐌆 nstall
 
 1. clone the repository : `git clone https://github.com/Kraymer/F-dotfiles.git ~/ ; cd ~/F-dotfiles`
 1. setup `stow`, *inception style* : `stow -t ~ stow` 
@@ -24,7 +24,7 @@ Great effort is put on up-to-date documentation, ease of maintenance and deploym
 
 When needed, special install instructions are present in package `README.md` file.
 
-## 𐌕he Rules
+## 𐌕 he Rules
 
 > *Walter -* That rules really tie the repo together, do they not?  
 > *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>  

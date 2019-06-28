@@ -55,7 +55,7 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 > if Stow can create a single symlink that points to an entire subtree within the package tree, it will choose to do that rather than create a directory in the target tree and populate it with symlinks.
 
-`.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files, see [example](https://github.com/Kraymer/F-dotfiles/blob/master/sublime_text_3/.gitignore).
+`.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files, see [example](https://github.com/Kraymer/F-dotfiles/blob/master/_sublime_text_3/.gitignore).
 
 ### Secret files
 
@@ -73,7 +73,7 @@ Then, create one subpackage per OS to host each specific directories structure a
 `myapp/@linux/.config -> ../ _common/myapp/`
 `myapp/@macOS/Library -> ../ _common/myapp/`
 
-Feel confused ? Check [`sublime_text_3` example](https://github.com/Kraymer/F-dotfiles/tree/master/sublime_text_3/%40linux/.config/sublime-text-3)
+Feel confused ? Check [`sublime_text_3` example](https://github.com/Kraymer/F-dotfiles/tree/master/_sublime_text_3/%40linux/.config/sublime-text-3)
 
 ---
 <i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [.stowrc](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  

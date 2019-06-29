@@ -63,7 +63,7 @@ Files that contain sensitive information and should not be published are kept se
 These files are prominently listed in the package `README.md` with a ⚠ symbol aside.  
 Because the secret file itself is not tracked, a template is commited instead having same name but with the `.local` suffix appended. This template is intended to serve as a base for edition and can be renamed (removing the suffix) after its content is edited.
 
-### Multi-platforms paths <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/tree/master/_sublime_text_3/%40linux/.config/sublime-text-3)
+### Multi-platforms paths <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/_sublime_text_3/%40linux/.config/sublime-text-3/Packages/User)
 
 For example, let's say you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.  
 

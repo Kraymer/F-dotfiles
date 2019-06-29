@@ -8,7 +8,7 @@
 Great effort is put on up-to-date documentation, ease of maintenance and deployment on both Linux and OS X.
 
 
-## 𐌅 eatures
+## Features
 
 - **`stow` powered:** symlink dotfiles and thus keep them always up-to-date in your repository
 - **topical organization:** organize dotfiles by application facilitating reuse across different machines
@@ -16,7 +16,7 @@ Great effort is put on up-to-date documentation, ease of maintenance and deploym
 - **KISS:** there is deliberately none build script involved at all, the repository consist of dotfiles all installable using same modus operandi (`stow <directory>`)
 
 
-## 𐌆 nstall
+## Install
 
 1. clone the repository : `git clone https://github.com/Kraymer/F-dotfiles.git ~/ ; cd ~/F-dotfiles`
 1. setup `stow`, *inception style* : `stow -t ~ stow` 
@@ -24,7 +24,7 @@ Great effort is put on up-to-date documentation, ease of maintenance and deploym
 
 When needed, special install instructions are present in package `README.md` file.
 
-## 𐌕 he Rules
+## Rules
 
 > *Walter -* That rules really tie the repo together, do they not?  
 > *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>  
@@ -59,16 +59,16 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 ### ⒟ Secret files
 
-Secret files, ie files that should not be commited/published once edited, must have a *.local* extension to be ignored by the root `.gitignore` file.  
-These files are prominently listed in the package `README.md` next to a ⚠ symbol.
-
+Files that contain sensitive information and should not be published are kept secret using package specific `.gitignore` files.  
+These files are prominently listed in the package `README.md` with a ⚠ symbol aside.  
+Because the secret file itself is not tracked, a template is commited instead having same name but with the `.local` suffix appended. This template is intended to serve as a base for edition and can be renamed (removing the suffix) after its content is edited.
 
 ### ⒠ Multi-platforms paths
 
-For example, let's say_ you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.  
+For example, let's say you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.  
 
-Put the shared part of filepaths in a shared subpackage : `myapp/_common/myapp/spam.conf`  
-Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge :  
+Put the shared part of filepaths in a shared `_common` folder : `myapp/_common/myapp/spam.conf`  
+Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge to `_common` files :  
 `myapp/@linux/.config -> ../ _common/myapp/`  
 `myapp/@macOS/Library -> ../ _common/myapp/`
 

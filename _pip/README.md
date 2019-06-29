@@ -1,9 +1,11 @@
-**List of packages to install via `pip`, the python packaging tool.**
+## [`pip`](https://pypi.org/)
 
+~~~
     ├── packages2.txt        python2 packages list
     └── packages3.txt        python3 packages list
+~~~
 
----
+### Install notes
 
 To create the packages list do :
 

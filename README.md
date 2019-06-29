@@ -59,8 +59,8 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 ### ⒟ Secret files
 
-Secret files, ie files that should not be commited/published once edited, must have a *.local* extension to be ignored by the root `.gitignore` file.  
-These files are prominently listed in the package `README.md` next to a ⚠ symbol.
+Secret files, ie files that contain sensitive information and should not be published, are registered by package `.gitignore` files.  
+These files are prominently listed in the package `README.md` with a ⚠ symbol aside. Because the secret file itself is not tracked, a template is commited having the same name with the `.local` suffix appended and can be use as a starting point for edition.
 
 
 ### ⒠ Multi-platforms paths

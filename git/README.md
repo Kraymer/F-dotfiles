@@ -4,7 +4,7 @@
 ~
 ├── .config
 │   └── git
-│       └── .gitconfig.local
+│       └── .credentials.local
 ├── .gitconfig
 ├── .gitignore
 └── .zsh
@@ -12,5 +12,5 @@
     └── functions_git.zsh
 ~~~
 
-🖊 `.gitconfig.local`: non-tracked local file to enter your credentials 
+🖊 `credentials`: secret file to enter your git identity (name and email)
 - `functions_git.zsh`: bash functions executing advanced git routines

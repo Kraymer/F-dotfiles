@@ -1,4 +1,3 @@
-**/*.local
 .DS_Store
 /bin/
 !README.md

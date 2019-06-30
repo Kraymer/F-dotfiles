@@ -4,7 +4,7 @@
 ~
 ├── .config
 │   └── git
-│       └── .credentials.local
+│       └── credentials.local
 ├── .gitconfig
 ├── .gitignore
 └── .zsh

@@ -1,4 +1,4 @@
-# Gopass
+## [`Gopass`](https://github.com/gopasspw/gopass)
 
 ~~~
 └── .config
@@ -6,7 +6,8 @@
         └── config.yml
 ~~~
     
-Configuration for [gopass](https://github.com/gopasspw/gopass).  
+### Install notes
+
 When installing on a new machine either add a new gpg key using `recipient add` command or install an authorized existing one using `gpg --import my_secret.key`.  
 Then you must define the key as trustable :
 

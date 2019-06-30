@@ -60,7 +60,7 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 ### Secret files <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/git/.config/git/.gitconfig.local)
 
 Files that contain sensitive information and should not be published are kept secret using package specific `.gitignore` files.  
-These files are prominently listed in the package `README.md` with a ⚠ symbol aside.  
+These files are prominently listed in the package `README.md` with a 🖊 symbol aside.  
 Because the secret file itself is not tracked, a template is commited instead having same name but with the `.local` suffix appended. This template is intended to serve as a base for edition and can be renamed (removing the suffix) after its content is edited.
 
 ### Multi-platforms paths <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/_sublime_text_3/%40linux/.config/sublime-text-3/Packages/User)

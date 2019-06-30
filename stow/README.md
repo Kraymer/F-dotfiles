@@ -1,4 +1,4 @@
-## [`Stow`](https://www.gnu.org/software/stow/), *the symlink farm manager* 
+## [`Stow`](https://www.gnu.org/software/stow/)
 
     ~
     ├── .stow-global-ignore     Ignore files based on F-dotfiles filenaming scheme

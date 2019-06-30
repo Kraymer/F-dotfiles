@@ -1,4 +1,4 @@
-**python <<http://www.python.org/>>  setup.**
+## [`Python`](http://www.python.org/)
 
     ├── .config
     │   └── flake8

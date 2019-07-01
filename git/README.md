@@ -15,5 +15,5 @@
     └── functions_git.zsh
 ~~~
 
-✏ `credentials`: secret file to enter your git identity (name and email)  
+✏ **`credentials`**: secret file to enter your git identity (name and email)  
 🗎 `functions_git.zsh`: bash functions executing advanced git routines

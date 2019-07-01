@@ -57,7 +57,7 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 `.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files. 
  
-### Secret files <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/git/.config/git/.gitconfig.local)
+### Secret files <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/git/.config/git/credentials.local)
 
 Files that contain sensitive information and should not be published are kept secret using package specific `.gitignore` files.  
 These files are prominently listed in the package `README.md` with a 🖊 symbol aside.  

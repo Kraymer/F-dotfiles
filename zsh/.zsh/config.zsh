@@ -13,13 +13,14 @@ export LANG=en_US.UTF-8
 # History
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
-HIST_STAMPS="mm/dd/yyyy" 
+HIST_STAMPS="mm/dd/yyyy"
 SAVEHIST=100000
 setopt EXTENDED_HISTORY # add timestamps to history
 setopt SHARE_HISTORY    # share history between sessions ???
 setopt APPEND_HISTORY   # adds history
 
 # ssh-agent
+pkill ssh-agent
 eval "$(ssh-agent -s)"
 
 # set various options

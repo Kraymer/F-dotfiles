@@ -24,9 +24,6 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"BracketHighlighter",
-		"Function Name Display",
-		"GitGutter",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -43,5 +40,5 @@
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": false,
-	"trim_trailing_white_space_on_save": false
+	"trim_trailing_white_space_on_save": true
 }

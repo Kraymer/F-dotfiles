@@ -2,8 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"BracketHighlighter",
-		"GitGutter"
 	],
 	"installed_packages":
 	[
@@ -21,6 +19,7 @@
 		"Python PEP8 Autoformat",
 		"requirementstxt",
 		"SideBarEnhancements",
+		"SublimeGit",
 		"Trimmer"
 	]
 }

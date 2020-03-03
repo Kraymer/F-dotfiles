@@ -30,6 +30,9 @@ convert -loop 0 -delay 100 in1.png in2.png out.gif
 # Remove transparent border
 convert in.png -trim +repage out.png
 
+# Add transparent border
+convert in.png +repage -background White -gravity center -extent 256x256 output.png
+
 # Convert transparent background to color
 convert -flatten in.png out.png
 

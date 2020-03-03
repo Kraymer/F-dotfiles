@@ -41,3 +41,6 @@ git revert -m 1 <merge_commit_SHA1>
 
 # Search for a string in whole repository history
 git log -Spassword
+
+# Limit git log to commits specifics to the branch
+git log --first-parent --no-merges

@@ -27,7 +27,7 @@ git diff master...feature
 git rebase -i @~7
 
 # Delete all remote branches that have been merged
-git branch -a --merged remotes/origin/master | grep -Ev "master|hotfix|develop" | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin
+git branch -D $(git branch --merged | percol | awk '{print $1;}')
 
 # Move last n commits to a new branch
 # Note: Any changes not committed will be lost.

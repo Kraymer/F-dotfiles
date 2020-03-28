@@ -19,10 +19,6 @@ setopt EXTENDED_HISTORY # add timestamps to history
 setopt SHARE_HISTORY    # share history between sessions ???
 setopt APPEND_HISTORY   # adds history
 
-# ssh-agent
-pkill ssh-agent
-eval "$(ssh-agent -s)"
-
 # set various options
 setopt AUTO_CD
 setopt EXTENDED_GLOB
@@ -35,3 +31,7 @@ setopt NO_CASE_GLOB     # Case insensitive globbing
 setopt NO_LIST_BEEP
 
 DISABLE_UNTRACKED_FILES_DIRTY="true" # makes repository status check for large repositories much faster
+
+# ssh-agent
+pkill ssh-agent
+eval "$(ssh-agent -s)" 2>&1 1>/dev/null  # redirect stdout required by POWERLEVEL10K instant promp

@@ -1,7 +1,7 @@
 # Zsh
 
     ├── .oh_my.zsh                Zsh theme and plugins
-    ├──.p10k.zsh	              POWERLEVEL10K zsh theme config
+    ├── .p10k.zsh	              POWERLEVEL10K zsh theme config
     ├── .zsh
     │   ├── aliases.zsh
     │   ├── config.zsh            Configure shell behavior

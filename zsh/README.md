@@ -1,6 +1,7 @@
 # Zsh
 
     ├── .oh_my.zsh                Zsh theme and plugins
+    ├──.p10k.zsh	              POWERLEVEL10K zsh theme config
     ├── .zsh
     │   ├── aliases.zsh
     │   ├── config.zsh            Configure shell behavior
@@ -23,7 +24,7 @@ Others packages define environment variables or functions by writing shell files
 ### Requirements
 
 - `oh-my-zsh` <<https://github.com/robbyrussell/oh-my-zsh>>
-- `powerlevel9k` <<https://github.com/bhilburn/powerlevel9k>>
+- `powerlevel10k` <<https://github.com/romkatv/powerlevel10k/>>
 
 ### Oh-my-zsh external plugins
 

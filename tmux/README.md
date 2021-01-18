@@ -2,7 +2,7 @@
 
     └── .tmux.conf
 
-![tmux](https://raw.githubusercontent.com/Kraymer/bulkdata/master/F-dotfiles/tmux.png)
+![tmux](https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/.github/img/tmux.png)
 
 Enable mouse scrolling/copy-paste and nice theme overall.
 

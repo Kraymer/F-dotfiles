@@ -1,2 +1,5 @@
 # rename extensions of files
 rename -S .CR2 .jpg *.CR2
+
+# delete all broken symlinks in current dir
+find -L . -name . -o -type d -prune -o -type l -exec rm {} +

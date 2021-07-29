@@ -32,6 +32,3 @@ setopt NO_LIST_BEEP
 
 DISABLE_UNTRACKED_FILES_DIRTY="true" # makes repository status check for large repositories much faster
 
-# ssh-agent
-pkill ssh-agent
-eval "$(ssh-agent -s)" 2>&1 1>/dev/null  # redirect stdout required by POWERLEVEL10K instant promp

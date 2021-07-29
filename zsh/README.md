@@ -25,9 +25,4 @@ Others packages define environment variables or functions by writing shell files
 
 - `oh-my-zsh` <<https://github.com/robbyrussell/oh-my-zsh>>
 - `powerlevel10k` <<https://github.com/romkatv/powerlevel10k/>>
-
-### Oh-my-zsh external plugins
-
-- `zsh-autosuggestions` https://github.com/zsh-users/zsh-autosuggestions
-- `zsh-syntax-highlighting` https://github.com/zsh-users/zsh-syntax-highlighting
-- `zsh-history-substring-search` https://github.com/zsh-users/zsh-history-substring-search
+- custom Oh-my-zsh plugins listed at the end of https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/zsh/.oh_my.zsh

@@ -5,21 +5,21 @@
 	],
 	"installed_packages":
 	[
+		"BetterFindBuffer",
 		"BracketHighlighter",
 		"Dotfiles Syntax Highlighting",
 		"Function Name Display",
 		"GitGutter",
+		"HTML-CSS-JS Prettify",
 		"Monokai Extended",
 		"Package Control",
 		"Pretty JSON",
 		"Pretty YAML",
-		"Print to HTML",
-		"Python Flake8 Lint",
 		"Python Imports Sorter",
-		"Python PEP8 Autoformat",
 		"requirementstxt",
 		"SideBarEnhancements",
 		"SublimeGit",
-		"Trimmer"
+		"SublimeLinter",
+		"SublimeLinter-flake8"
 	]
 }

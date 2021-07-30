@@ -1,18 +1,3 @@
-# Reset prompt every minute to update hour
-TRAPALRM() {  # don't clear completion items on reset prompt
-    if [ "$WIDGET" != "complete-word" ]; then
-        zle reset-prompt
-    fi
-}
-
-
-dirwatch() {
-    inotifywait -m $1 -e create -e move -e delete |
-        while read thepath action file; do
-            echo "$action $file"
-        done
-}
-
 where() {
     find . -name "*${1}*"
 }
@@ -22,21 +7,20 @@ psql_history() {
     psql -U postgres -c "SELECT (pg_stat_file('base/'||oid ||'/PG_VERSION')).modification, datname FROM pg_database;"
 }
 
-ppgrep() {
-    if [[ $1 == "" ]]; then
-        PERCOL=percol
-    else
-        PERCOL="percol --query $1"
-    fi
-    ps aux | eval $PERCOL | awk '{ print $2 }'
+# function to set terminal title  
+function set-title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
 }
 
-ppkill() {
-    if [[ $1 =~ "^-" ]]; then
-        QUERY=""            # options only
-    else
-        QUERY=$1            # with a query
-        [[ $# > 0 ]] && shift
-    fi
-    ppgrep $QUERY | xargs kill $*
+function precmd () {
+  window_title="\033]0;${PWD##*/} $@\007"
+  echo -ne "$window_title"
+}
+
+function preexec() {
+   precmd "🐍" ${1}
 }

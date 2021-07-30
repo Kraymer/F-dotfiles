@@ -6,3 +6,4 @@ alias nano='nano -c'
 # suffix aliases http://zshwiki.org/home/examples/aliassuffix
 alias -s log=nano
 alias -s conf=nano
+

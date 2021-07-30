@@ -6,7 +6,7 @@
 	"default_line_ending": "unix",
 	"detect_indentation": false,
 	"ensure_newline_at_eof_on_save": true,
-	"expand_tabs_on_save": true,
+	"expand_tabs_on_save": false,
 	"folder_exclude_patterns":
 	[
 		"locale",
@@ -40,5 +40,5 @@
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": false,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": false
 }

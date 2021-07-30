@@ -1,5 +1,3 @@
-TMOUT=60  # refresh prompt every minute (thus updating PS1 'hour' component)
-
 # Completion system
 autoload -U compinit
 compinit
@@ -32,4 +30,3 @@ setopt NO_LIST_BEEP
 
 DISABLE_UNTRACKED_FILES_DIRTY="true" # makes repository status check for large repositories much faster
 DISABLE_AUTO_TITLE="true"
-

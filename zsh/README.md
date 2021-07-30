@@ -13,8 +13,6 @@
 This package [loads Oh-My-Zsh](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.oh_my.zsh) and activate powerlevel10k theme.
 It defines some [aliases](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.zsh/aliases.zsh) that adds sane options to core shell functions and GNU utilities.
 
-![zsh prompt](https://raw.githubusercontent.com/Kraymer/bulkdata/master/F-dotfiles/zshprompt.png)
-
 ### Customization
 
 Others packages define environment variables or functions by writing shell files into `~/.zsh`.
@@ -25,9 +23,4 @@ Others packages define environment variables or functions by writing shell files
 
 - `oh-my-zsh` <<https://github.com/robbyrussell/oh-my-zsh>>
 - `powerlevel10k` <<https://github.com/romkatv/powerlevel10k/>>
-
-### Oh-my-zsh external plugins
-
-- `zsh-autosuggestions` https://github.com/zsh-users/zsh-autosuggestions
-- `zsh-syntax-highlighting` https://github.com/zsh-users/zsh-syntax-highlighting
-- `zsh-history-substring-search` https://github.com/zsh-users/zsh-history-substring-search
+- custom Oh-my-zsh plugins listed at the end of https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/zsh/.oh_my.zsh

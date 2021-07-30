@@ -1,4 +1,8 @@
-![F-dotfiles banner](https://raw.githubusercontent.com/Kraymer/public/master/F-dotfiles/banner.png)
+[![][patreon]](https://www.patreon.com/kraymer)
+
+[patreon]: https://img.shields.io/badge/-%E2%99%A1%20Donate%20-ff69b4
+
+![F-dotfiles banner](https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/.github/img/banner.png)
 
 # F-dotfiles
 

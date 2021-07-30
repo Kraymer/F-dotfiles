@@ -12,8 +12,6 @@
     co = "!f() { git checkout \"$@\" && git stash list | grep \"$1:\"; }; f"
     last = log -1 HEAD
     st = status
-    uncommit = reset --soft HEAD~
-    unstage = reset HEAD --
     lg = log --graph --abbrev-commit --decorate --date=relative --all
 
 [color]
@@ -22,27 +20,12 @@
     branch = auto
     ui = true
 
-[diff]
-    tool = meld
-
-[difftool]
-    prompt = false
-
 [gui]
     # Remove `git gui` pop-up warning
     gcwarning = false
 
 [help]
     autocorrect = 1
-
-[merge]
-    tool = meld
-
-[mergetool]
-    keepBackup = false
-
-[mergetool "meld"]
-    cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
 
 [push]
     default = simple

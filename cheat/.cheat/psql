@@ -1,3 +1,5 @@
-# restart postgres server on mac
-pg_ctl -D /usr/local/var/postgres start
+# Interactive deletion of databases
+psql -h localhost -U postgres -tl|cut -d'|' -f 1| percol --prompt "DELETE DATABASES"| awk '{print $1;}'| xargs -L 1 -t dropdb -h localhost -U postgres
 
+# Copy a database
+createdb -h localhost -O postgres -U postgres -T old_db new_db

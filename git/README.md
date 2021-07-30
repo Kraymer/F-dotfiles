@@ -17,3 +17,6 @@
 
 ✏ **`credentials`**: secret file to enter your git identity (name and email)  
 
+### Requirements
+
+`diff-so-fancy` <<https://github.com/so-fancy/diff-so-fancy/>>

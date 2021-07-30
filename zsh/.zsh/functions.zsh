@@ -1,10 +1,8 @@
+#!/bin/bash
+
+
 where() {
     find . -name "*${1}*"
-}
-
-
-psql_history() {
-    psql -U postgres -c "SELECT (pg_stat_file('base/'||oid ||'/PG_VERSION')).modification, datname FROM pg_database;"
 }
 
 # function to set terminal title  
@@ -17,10 +15,17 @@ function set-title() {
 }
 
 function precmd () {
-  window_title="\033]0;${PWD##*/} $@\007"
+  window_title="\033]0;$@\007"
   echo -ne "$window_title"
 }
 
 function preexec() {
-   precmd "🐍" ${1}
+  case $1 in
+    *py*)                precmd "🐍 ${1}" ;;
+    *gulp*)              precmd "🎨 ${1}" ;;
+    *htop*)              precmd "🔋 ${1}" ;;
+    *ssh* )              precmd "🛰 ${1}" ;;
+    *release* )          precmd "🚀 ${1}" ;;
+    *micro*|*nano* )     precmd "📝 ${1}" ;;
+  esac
 }

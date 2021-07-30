@@ -44,3 +44,6 @@ git log -Spassword
 
 # Limit git log to commits specifics to the branch
 git log --first-parent --no-merges
+
+# Select git branches to delete interactively
+git branch -D $(git branch --merged | percol | awk '{print $1;}')

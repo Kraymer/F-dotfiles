@@ -38,3 +38,6 @@ convert -flatten in.png out.png
 
 # Convert color to alpha
 convert input.png -fuzz 10% -fill none -draw "matte 0,0 replace" output.png
+
+# Convert image from RGB to greyscale
+convert in.png -set colorspace Gray -separate -average out.png

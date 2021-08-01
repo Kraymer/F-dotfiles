@@ -27,5 +27,6 @@ function preexec() {
     *ssh* )              precmd "🛰 ${1}" ;;
     *release* )          precmd "🚀 ${1}" ;;
     *micro*|*nano* )     precmd "📝 ${1}" ;;
+    *rsync*|*cp*|*scp*   precmd "💾 ${1}" ;;
   esac
 }

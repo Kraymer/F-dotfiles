@@ -1,6 +1,14 @@
 **Tmux config <<https://tmux.github.io/>>**
 
-    └── .tmux.conf
+Package tree:
+
+tmux
+├── .tmux.conf
+└── README.md
+
+0 directories, 2 files
+
+---
 
 ![tmux](https://raw.githubusercontent.com/Kraymer/F-dotfiles/master/.github/img/tmux.png)
 

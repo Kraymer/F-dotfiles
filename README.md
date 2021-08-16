@@ -30,8 +30,8 @@ When needed, special install instructions are present in package `README.md` fil
 
 ## Rules
 
-> *Walter -* That rules really tie the repo together, do they not?  
-> *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>  
+> *Walter -* That rules really tie the repo together, do they not?
+> *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>
 
 ### Documentation
 
@@ -49,7 +49,7 @@ Install notes and requirements can also be listed.
   [`@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx))
 - leading `@` for environment packages and subpackages (eg
   [`@mac`](https://github.com/Kraymer/F-dotfiles/blob/master/%40mac/), [`attic/@Daemon-osx`](https://github.com/Kraymer/F-dotfiles/blob/master/attic/@Daemon-osx))
-- leading `_` for non packages meaning that these directories must not be *stowed* (eg [`_homebrew`](https://github.com/Kraymer/F-dotfiles/blob/master/_homebrew)) 
+- leading `_` for non packages meaning that these directories must not be *stowed* (eg [`_homebrew`](https://github.com/Kraymer/F-dotfiles/blob/master/_homebrew))
 
 Having a convention for subpackage naming enable us to write a [`.stow-global-ignore`](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stow-global-ignore#L7) file so that subpackages are not symlinked when stowing parent package.
 
@@ -59,23 +59,23 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 > if Stow can create a single symlink that points to an entire subtree within the package tree, it will choose to do that rather than create a directory in the target tree and populate it with symlinks.
 
-`.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files. 
- 
+`.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files.
+
 ### Secret files <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/git/.config/git/credentials.local)
 
-Files that contain sensitive information and should not be published are kept secret using package specific `.gitignore` files.  
-These files are prominently listed in the package `README.md` with a ✏ symbol aside.  
+Files that contain sensitive information and should not be published are kept secret using package specific `.gitignore` files.
+These files are prominently listed in the package `README.md` with a ✏ symbol aside.
 Because the secret file itself is not tracked, a template is commited instead having same name but with the `.local` suffix appended. This template is intended to serve as a base for edition and can be renamed (removing the suffix) after its content is edited.
 
 ### Multi-platforms paths <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/_sublime_text_3/%40linux/.config/sublime-text-3/Packages/User)
 
-For example, let's say you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.  
+For example, let's say you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.
 
-Put the shared part of filepaths in a shared `_common` folder : `myapp/_common/myapp/spam.conf`  
-Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge to `_common` files :  
-`myapp/@linux/.config -> ../ _common/myapp/`  
+Put the shared part of filepaths in a shared `_common` folder : `myapp/_common/myapp/spam.conf`
+Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge to `_common` files :
+`myapp/@linux/.config -> ../ _common/myapp/`
 `myapp/@macOS/Library -> ../ _common/myapp/`
 
 ---
-<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [.stowrc](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  
+<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [.stowrc](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)
 <i id="f2">2</i> https://www.youtube.com/watch?v=ezQLP1dj_t8 [⤸](#a2)

@@ -2,35 +2,36 @@
 
 My preferences and packages to install with their settings.
 
-~~~
-~
-├── _common
-│   └── Packages
-│       └── User
-│           ├── Default (Linux).sublime-keymap
-│           ├── Default (Linux).sublime-mousemap
-│           ├── Flake8Lint.sublime-settings
-│           ├── GitGutter.sublime-settings
-│           ├── Markdown.sublime-settings
-│           ├── Monokai (Flake8Lint).tmTheme
-│           ├── Package Control.cache
-│           ├── Package Control.last-run
-│           ├── Package Control.merged-ca-bundle
-│           ├── Package Control.sublime-settings
-│           ├── Package Control.user-ca-bundle
-│           ├── pep8_autoformat.sublime-settings
-│           ├── Preferences.sublime-settings
-│           ├── SBSCompareScheme.sublime-color-scheme
-│           └── SBSCompareTheme.tmTheme
+Package tree:
+
+_sublime_text_3
 ├── .gitignore
 ├── @linux
 │   └── .config
 │       └── sublime-text-3
-└── @osx
-    └── Library
-        └── Application Support
-            └── Sublime Text 3
-~~~
+│           └── Packages
+│               └── User -> ../../../../_common/Packages/User
+├── @osx
+│   └── Library
+│       └── Application\ Support
+│           └── Sublime\ Text\ 3
+│               └── Packages -> ../../../../_common/Packages
+├── README.md
+└── _common
+    └── Packages
+        └── User
+            ├── Default\ (Linux).sublime-mousemap
+            ├── Flake8Lint.sublime-settings
+            ├── GitGutter.sublime-settings
+            ├── Markdown.sublime-settings
+            ├── Monokai\ (Flake8Lint).tmTheme
+            ├── Package\ Control.sublime-settings
+            ├── Preferences.sublime-settings
+            └── pep8_autoformat.sublime-settings
+
+13 directories, 10 files
+
+---
 
 ### Install notes
 

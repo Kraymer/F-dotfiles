@@ -1,8 +1,16 @@
 **Custom config for my lenovo machine at work.**
 
-    ├── .Xmodmap            Switch Ctrl/Alt key for my lenovo keyboard
-    └── .zsh                Define/load stuff on zsh startup
-        └── linux.zsh
+Package tree:
+
+@linux
+├── .Xmodmap
+├── .zsh
+│   └── linux.zsh
+└── README.md
+
+1 directory, 3 files
+
+---
 
 ### Requirements
 

@@ -2,10 +2,23 @@
 """
 For each package docgen.py will call tree <package> and replace the block
 in the <package>/README.md file by the output produced.
+
+In order to be updated, each README.md file must have a common mark.
+Each block containing the package tree should initially look like this:
+
+Package tree:
+
+<< Tree content >>
+
+---
 """
 
 
 import os
+
+
+BLOCK_PACKAGE = "Package tree:\n"
+ENDBLOCK_PACKAGE = "---\n"
 
 
 def get_dotfiles_packages() -> list:
@@ -38,9 +51,6 @@ def get_package_tree(package) -> str:
     return tree.decode("utf-8")
 
 
-BLOCK_PACKAGE = "Package tree:\n"
-ENDBLOCK_PACKAGE = "---\n"
-
 def update_readme(package, tree):
     """
     Open the README.md contained in a package,
@@ -57,3 +67,9 @@ def update_readme(package, tree):
     with open(f"./{package}/README.md", "w") as file:
         new_file_contents = "".join(lines_list)
         file.write(new_file_contents)
+
+
+packages = get_dotfiles_packages()
+for package in packages:
+    tree = get_package_tree(package)
+    update_readme(package=package, tree=tree)

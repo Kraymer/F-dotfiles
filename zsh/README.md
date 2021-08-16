@@ -1,14 +1,22 @@
 # Zsh
 
-    ├── .oh_my.zsh                Zsh theme and plugins
-    ├── .p10k.zsh	              POWERLEVEL10K zsh theme config
-    ├── .zsh
-    │   ├── aliases.zsh
-    │   ├── config.zsh            Configure shell behavior
-    │   ├── dircolors.256dark     Colored ls
-    │   └── functions.zsh         Custom shell functions
-    ├── .zshenv                   Routine loading all .zshenv files
-    └── .zshrc                    Routine loading all .zsh files
+Package tree:
+
+zsh
+├── .oh_my.zsh
+├── .p10k.zsh
+├── .zsh
+│   ├── aliases.zsh
+│   ├── config.zsh
+│   ├── dircolors.256dark
+│   └── functions.zsh
+├── .zshenv
+├── .zshrc
+└── README.md
+
+1 directory, 9 files
+
+---
 
 This package [loads Oh-My-Zsh](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.oh_my.zsh) and activate powerlevel10k theme.
 It defines some [aliases](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/.zsh/aliases.zsh) that adds sane options to core shell functions and GNU utilities.

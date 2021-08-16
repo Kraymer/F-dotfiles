@@ -1,9 +1,15 @@
 ## [`pip`](https://pypi.org/)
 
-~~~
-    ├── packages_py2.txt        
-    └── packages_py3.txt       
-~~~
+Package tree:
+
+_pip
+├── README.md
+├── packages_py2.txt
+└── packages_py3.txt
+
+0 directories, 3 files
+
+---
 
 ### Install notes
 

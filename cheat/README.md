@@ -1,10 +1,11 @@
 ## [`Cheat`](https://github.com/chrisallenlane/cheat)
 
-> My cheatsheets.   
+> My cheatsheets.
 > It's sometimes quite a dilemma to decide if a command must be consolidated as a shell function or in a cheat. Cheat win most of the time (I feel less guilty writing new documentation to maintain than code).
 
-~~~
-.
+Package tree:
+
+cheat
 ├── .cheat
 │   ├── cheat
 │   ├── convert
@@ -27,8 +28,12 @@
 │   ├── unix
 │   ├── vidir
 │   └── zsh
-└── .zsh
-    └── cheat.zsh
-~~~
+├── .zsh
+│   └── cheat.zsh
+└── README.md
+
+2 directories, 23 files
+
+---
 
 - `cheat.zsh`: activate colors

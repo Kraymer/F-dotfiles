@@ -26,7 +26,6 @@ My preferences and packages to install with their settings.
             └── Application Support
                 └── Sublime Text 3
                     └── Packages -> ../../../../_common/Packages
-    
 
 ### Install notes
 

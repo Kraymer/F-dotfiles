@@ -8,6 +8,5 @@
     └── .config
         └── micro
             └── settings.json
-    
 
 

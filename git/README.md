@@ -13,7 +13,6 @@
     ├── .stow-local-ignore
     └── .zsh
         └── aliases_git.zsh
-    
 
 ✏ **`credentials`**: secret file to enter your git identity (name and email)  
 

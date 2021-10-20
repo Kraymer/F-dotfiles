@@ -5,7 +5,7 @@
     ├── .Xmodmap
     └── .zsh
         └── linux.zsh
-    
+
 ### Requirements
 
 - Xmodmap

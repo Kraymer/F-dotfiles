@@ -39,7 +39,7 @@ Dotfiles repositories are often grimoire-like, collection of ancient formulas.
 I make the effort of documenting each package because the few infos given in
 the `README.md` add up and can save a lot of time when configuring a new machine from scratch.
 
-Each package has a `README.md` which present its purpose and a flat `tree` view of its files.
+Each package has a `README.md` which present its purpose and a flat `tree` view of its files<sup id="a3">[3](#f3)</sup>  .
 Install notes and requirements can also be listed.
 
 ### Directories naming
@@ -61,21 +61,14 @@ Quoting stow [documentation](https://www.gnu.org/software/stow/manual/html_node/
 
 `.gitignore` can be present in packages because of this behaviour, in order to avoid having your repository cluttered with unknown files. 
  
-### Secret files <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/git/.config/git/credentials.local)
+### Secret files <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/git/.config/git/credentials.example)
 
 Files that contain sensitive information and should not be published are kept secret using package specific `.gitignore` files.  
-These files are prominently listed in the package `README.md` with a ✏ symbol aside.  
-Because the secret file itself is not tracked, a template is commited instead having same name but with the `.local` suffix appended. This template is intended to serve as a base for edition and can be renamed (removing the suffix) after its content is edited.
+Because the secret file itself is not tracked, a template is commited instead having same name but with the `.example` suffix appended. This template is intended to serve as a base for edition and can be renamed (removing the suffix) after its content is edited.
 
-### Multi-platforms paths <sup><sub>[[cf example]](https://github.com/Kraymer/F-dotfiles/blob/master/_sublime_text_3/%40linux/.config/sublime-text-3/Packages/User)
 
-For example, let's say you want to store one config file as `~/.config/myapp/spam.conf` on Linux and as `~/Library/myapp/spam.conf` on macOS.  
-
-Put the shared part of filepaths in a shared `_common` folder : `myapp/_common/myapp/spam.conf`  
-Then, create one subpackage per OS to host each specific directories structure and use symlink to bridge to `_common` files :  
-`myapp/@linux/.config -> ../ _common/myapp/`  
-`myapp/@macOS/Library -> ../ _common/myapp/`
 
 ---
-<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [.stowrc](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  
-<i id="f2">2</i> https://www.youtube.com/watch?v=ezQLP1dj_t8 [⤸](#a2)
+<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [`.stowrc`](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  
+<i id="f2">2</i> https://www.youtube.com/watch?v=ezQLP1dj_t8 [⤸](#a2)  
+<i id="f3">3</i> use [`docgen.py`](https://github.com/Kraymer/F-dotfiles/blob/master/docgen.py) script to update the `README.md` files listing automagically [⤸](#a2)

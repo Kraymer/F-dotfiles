@@ -27,10 +27,9 @@ def tree(path):
 def format_tree(text):
     """Format tree for inclusion in markdown text
     """
-    return """
-{}
+    return """{}
     {}
-    
+
 """.format(COMMENT, textwrap.indent(text, " "*4).strip())
 
 def generate_doc(sentinel=COMMENT):
@@ -39,7 +38,6 @@ def generate_doc(sentinel=COMMENT):
     """
     for readme_path in [os.path.abspath(x) for x in glob("*/README.md")]:
         with open(readme_path, "r+") as readme_file:
-            print(readme_path)
             readme = readme_file.read()
             if sentinel in readme:
                 tree_repr = tree(os.path.dirname(readme_path))

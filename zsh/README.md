@@ -18,7 +18,7 @@ It defines some [aliases](https://github.com/Kraymer/F-dotfiles/blob/master/zsh/
 
 Others packages define environment variables or functions by writing shell files into `~/.zsh`.
 
-`~/.zsshenv` sources all **.zshenv* files present in `~/.zsh` subfolders at zsh startup, and `~/.zshrc` do the same with **.zsh* files.
+`~/.zshenv` sources all **.zshenv* files present in `~/.zsh` subfolders at zsh startup, and `~/.zshrc` do the same with **.zsh* files.
 
 ### Requirements
 

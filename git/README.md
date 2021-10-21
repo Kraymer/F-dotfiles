@@ -9,8 +9,6 @@
     │   └── git
     │       └── credentials.example
     ├── .gitconfig
-    ├── .gitignore
-    ├── .stow-local-ignore
     └── .zsh
         └── aliases_git.zsh
 

@@ -15,7 +15,6 @@ My preferences and packages to install with their settings.
     │           ├── Package Control.sublime-settings
     │           ├── pep8_autoformat.sublime-settings
     │           └── Preferences.sublime-settings
-    ├── .gitignore
     ├── @linux
     │   └── .config
     │       └── sublime-text-3

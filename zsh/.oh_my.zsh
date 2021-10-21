@@ -19,7 +19,7 @@ POWERLEVEL9K_VIRTUALENV_BACKGROUND='150'  # Greenish
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump command-not-found django gnu-utils pip python
+plugins=(autojump command-not-found gnu-utils pip python
         # plugins below require install
          history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
 

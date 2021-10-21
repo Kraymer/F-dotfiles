@@ -1,11 +1,11 @@
 #!/bin/bash
 
-
+# Search which filenames contain given string in local dir subtree 
 where() {
     find . -name "*${1}*"
 }
 
-# function to set terminal title  
+# Set terminal title  
 function set-title() {
   if [[ -z "$ORIG" ]]; then
     ORIG=$PS1
@@ -14,19 +14,21 @@ function set-title() {
   PS1=${ORIG}${TITLE}
 }
 
-function precmd () {
+# Set window title
+function set-win-title () {
   window_title="\033]0;$@\007"
   echo -ne "$window_title"
 }
 
+# Prepend emoji on window title based on running command
 function preexec() {
   case $1 in
-    *py*)                precmd "🐍 ${1}" ;;
-    *gulp*)              precmd "🎨 ${1}" ;;
-    *htop*)              precmd "🔋 ${1}" ;;
-    *ssh* )              precmd "🛰 ${1}" ;;
-    *release* )          precmd "🚀 ${1}" ;;
-    *micro*|*nano* )     precmd "📝 ${1}" ;;
-    *rsync*|*cp*|*scp*   precmd "💾 ${1}" ;;
+    *py*)                 set-win-title "🐍 ${1}" ;;
+    *gulp*)               set-win-title "🎨 ${1}" ;;
+    *htop*)               set-win-title "🔋 ${1}" ;;
+    *ssh* )               set-win-title "🛰 ${1}" ;;
+    *release* )           set-win-title "🚀 ${1}" ;;
+    *micro*|*nano* )      set-win-title "📝 ${1}" ;;
+    *rsync*|*cp*|*scp*)   set-win-title "💾 ${1}" ;;
   esac
 }

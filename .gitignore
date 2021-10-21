@@ -1,6 +1,7 @@
-.DS_Store
-/bin/
-!README.md
 !*example
+!README.md
+.DS_Store
 .envrc
 .pre-commit-config.yaml
+.venv
+/bin/

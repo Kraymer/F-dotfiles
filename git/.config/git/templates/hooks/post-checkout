@@ -1,0 +1,11 @@
+#!/bin/bash  
+commit=$(git rev-parse --short HEAD)
+stash=$(git stash list | grep $commit | head -n 1 |cut -d ":" -f 1)
+if [ -n "$stash" ]; then
+    echo ""
+    echo "🔍 Found code stashed on top of current commit"
+    git stash show $stash
+    echo ""
+    echo "Apply with"
+    echo "   git stash apply $stash"
+fi

@@ -1,44 +1,25 @@
 # Local/private config goes in the include
 [include]
     path = ~/.config/git/credentials
-[core]
-    editor = nano
-    excludesfile = ~/.gitignore
-	pager = diff-so-fancy | less --tabs=4 -RFX
-
 
 # From there, sections are in alphabetic order
 
 [alias]
-    last = log -1 HEAD
     st = status
-    lg = log --graph --abbrev-commit --decorate --date=relative --all
-    commitnv = commit --no-verify
 [color]
     diff = auto
     status = auto
     branch = auto
 	ui = true
-[gui]
-    # Remove `git gui` pop-up warning
-    gcwarning = false
 [help]
     autocorrect = 1
-[push]
-    default = simple
-[pull]
-	rebase = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = 11
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
-[fetch]
-	prune = true
+[init]
+    templateDir = ~/.config/git/templates
+[core]
+    editor = nano
+    excludesfile = ~/.gitignore
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+	ui = true

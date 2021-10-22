@@ -71,4 +71,4 @@ Because the secret file itself is not tracked, a template is commited instead ha
 ---
 <i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [`.stowrc`](https://github.com/Kraymer/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  
 <i id="f2">2</i> https://www.youtube.com/watch?v=ezQLP1dj_t8 [⤸](#a2)  
-<i id="f3">3</i> use [`docgen.py`](https://github.com/Kraymer/F-dotfiles/blob/master/docgen.py) script to update the `README.md` files listing automagically [⤸](#a2)
+<i id="f3">3</i> use [`docgen.py`](https://github.com/Kraymer/F-dotfiles/blob/master/docgen.py) script to update the `README.md` files listing automagically [⤸](#a3)

@@ -23,3 +23,5 @@
     status = auto
     branch = auto
 	ui = true
+[pull]
+	rebase = false

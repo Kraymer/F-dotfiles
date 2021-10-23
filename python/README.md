@@ -3,10 +3,14 @@
     ├── .config
     │   └── flake8
     ├── .pylintrc
-    ├── .pystartup	      Enable python interpreter history
+    ├── .pystartup
     └── .zsh
-        └── python.zsh    Setup PATH, source venv
-        
-### Requirements
+        └── python.zsh
 
-`virtualenvwrapper` <<https://virtualenvwrapper.readthedocs.io/en/latest/>>
+### Packages install
+
+asciinema  # record terminal sessions
+nose       # extends features of unittest
+virtualenv # create isolated py environments
+
+

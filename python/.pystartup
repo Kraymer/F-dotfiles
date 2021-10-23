@@ -1,3 +1,5 @@
+# .pystartup: enable python interpreter history and auto-completion
+
 # Add auto-completion and a stored history file of commands to your Python
 # interactive interpreter. Requires Python 2.0+, readline. Autocomplete is
 # bound to the Esc key by default (you can change it - see readline docs).

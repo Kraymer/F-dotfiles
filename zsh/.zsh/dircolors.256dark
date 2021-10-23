@@ -1,4 +1,5 @@
-# Dark 256 color solarized theme for the color GNU ls utility.
+# dircolors.256dark: Dark 256 color solarized theme for the color GNU ls utility.
+
 # Used and tested with dircolors (GNU coreutils) 8.5
 #
 # @author  {@link http://sebastian.tramp.name Sebastian Tramp}

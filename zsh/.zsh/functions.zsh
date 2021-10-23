@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# functions.zsh: sometimes aliases are not enough...
+
 # Search which filenames contain given string in local dir subtree 
 where() {
     find . -name "*${1}*"

@@ -10,10 +10,8 @@
     │       ├── credentials.example
     │       └── templates
     │           └── hooks
-    │               └── post-checkout
-    ├── .gitconfig
-    └── .zsh
-        └── aliases_git.zsh
+    │               └── post-checkout 	# mention code previously staged from current branch
+    └── .gitconfig
 
 ✏ **`credentials`**: secret file to enter your git identity (name and email)  
 

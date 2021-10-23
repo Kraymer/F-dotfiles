@@ -1,3 +1,5 @@
+# config.zsh: shell system configuration
+
 # Completion system
 autoload -U compinit
 compinit

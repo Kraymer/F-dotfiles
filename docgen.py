@@ -76,7 +76,7 @@ def make_tree_doc(root):
         if branch_full:
             filename = branch_full.split()[-1].strip()
             if filename in desc:
-                branch += "  # " + desc[filename]
+                branch += " \t# " + desc[filename]
         res.append(branch)
     return "\n".join(res)
 

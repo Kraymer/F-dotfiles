@@ -1,6 +1,5 @@
 # .zshenv is always sourced, define here exported variables that should
 # be available to other programs.
-
 export VISUAL=subl
 export EDITOR=nano
 export PAGER=more
@@ -13,6 +12,7 @@ if test ! -z "$env_config_files" ;
     then
     for file in ${env_config_files}
     do
+      echo "ssource" $file
       source $file
     done
 fi

@@ -1,4 +1,7 @@
 #!/bin/bash  
+
+# post-checkout: mention code previously staged from current branch
+
 commit=$(git rev-parse --short HEAD)
 stash=$(git stash list | grep $commit | head -n 1 |cut -d ":" -f 1)
 if [ -n "$stash" ]; then

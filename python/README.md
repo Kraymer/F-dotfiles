@@ -9,8 +9,9 @@
 
 ### Packages install
 
+~~~
 asciinema  # record terminal sessions
 nose       # extends features of unittest
 virtualenv # create isolated py environments
-
+~~~
 

@@ -30,4 +30,3 @@
     └── .zsh
         └── cheat.zsh
 
-- `cheat.zsh`: activate colors

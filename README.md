@@ -15,8 +15,8 @@ Great effort is put on self-documentation and ease of maintenance.
 ## Features
 
 - **`stow` powered:** symlink dotfiles and thus keep them always up-to-date in your repository
-- **topical organization:** organize dotfiles by application facilitating reuse across different machines
-- **discoverability:** the repository architecture is easy to browse while staying compatible with `stow` symlinking mechanism
+- **topical organization:** organize dotfiles by application packages facilitating reuse across different machines
+- **discoverability:** self-documented packages making the architecture easy to browse while staying compatible with `stow` symlinking mechanism
 
 
 ## Install
@@ -27,20 +27,24 @@ Great effort is put on self-documentation and ease of maintenance.
 
 When needed, special install instructions are present in package `README.md` file.
 
+## Example
+
+Real-life usage of F-dotfiles by its maintainer is available in [`kraymer` branch](https://github.com/Kraymer/F-dotfiles/tree/kraymer).  
+
+
 ## Rules
 
-> *Walter -* That rules really tie the repo together, do they not?
+> *Walter -* That rules really tie the repo together, do they not?  
 > *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>
 
-### Documentation
+### Documentation <sup><sub>[`f-dotfiles.py`](https://github.com/Kraymer/)
 
-Dotfiles repositories are often grimoire-like, collection of ancient formulas.
+Dotfiles repositories are too often grimoire-like collection of ancient formulas, only usable by their original author.
 
-I make the effort of documenting each package because the few infos given in
-the `README.md` add up and can save a lot of time when configuring a new machine from scratch.
+F-dotfiles avoid this pitfall by paying special attention to packages documentation : run `pre-commit install` to enable [`f-dotfiles.py`](https://github.com/F-dotfiles/F-dotfiles/blob/master/docgen.py) hook that ensures that packages `README.md` tree listings are automatically updated when commiting.  
+Files descriptions that match the format `# <filename>: description` are extracted too and enrich the tree listing.
 
-Each package has a `README.md` which present its purpose and a flat `tree` view of its files<sup id="a3">[3](#f3)</sup>  .
-Install notes and requirements can also be listed.
+Others instructions like install notes and requirements should be manually entered by editing the `README.md` files directly, and can live peacefully alongside auto-generated tree view content. 
 
 ### Directories naming <sup><sub>[`.stow-global-ignore`](https://github.com/F-dotfiles/F-dotfiles/blob/master/stow/.stow-global-ignore#L7)
 
@@ -63,6 +67,5 @@ Because the secret file itself is not tracked, a template is commited instead ha
 
 
 ---
-<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [`.stowrc`](https://github.com/F-dotfiles/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)
+<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [`.stowrc`](https://github.com/F-dotfiles/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  
 <i id="f2">2</i> https://www.youtube.com/watch?v=ezQLP1dj_t8 [⤸](#a2)
-<i id="f3">3</i> use [`docgen.py`](https://github.com/F-dotfiles/F-dotfiles/blob/master/docgen.py) script to update the `README.md` files listing automagically [⤸](#a3)

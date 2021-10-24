@@ -28,5 +28,5 @@
     │   ├── vidir
     │   └── zsh
     └── .zsh
-        └── cheat.zsh
+        └── cheat.zsh 	# activate colors
 

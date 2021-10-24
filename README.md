@@ -25,11 +25,7 @@ Great effort is put on self-documentation and ease of maintenance.
 1. setup `stow`, *inception style* : `stow -t ~ stow` 
 1. install desired package via `stow <directory>` <sup id="a1">[1](#f1)</sup>
 
-When needed, special install instructions are present in package `README.md` file.
-
-## Example
-
-Real-life usage of F-dotfiles by its maintainer is available in [`kraymer` branch](https://github.com/Kraymer/F-dotfiles/tree/kraymer).  
+When needed, special install instructions are present in package `README.md` file
 
 
 ## Rules

@@ -19,32 +19,29 @@ Great effort is put on self-documentation and ease of maintenance.
 - **discoverability:** self-documented packages making the architecture easy to browse while staying compatible with `stow` symlinking mechanism
 
 
-## Install
+## Getting started
 
-1. clone the repository : `git clone https://github.com/F-dotfiles/F-dotfiles.git ~/ ; cd ~/F-dotfiles`
-1. setup `stow`, *inception style* : `stow -t ~ stow` 
-1. install desired package via `stow <directory>` <sup id="a1">[1](#f1)</sup>
+1. (optional: run `f-dotfiles.py --init` to remove kraymer dotfiles from repository)
+1. setup `stow`, *inception style* : `stow -t ~ stow`
 
-When needed, special install instructions are present in package `README.md` file.
+Voila ! Now that `stow` is properly configured you're ready to write your first package dotfiles and install it via `stow <directory>` command.
 
-## Example
-
-Real-life usage of F-dotfiles by its maintainer is available in [`kraymer` branch](https://github.com/Kraymer/F-dotfiles/tree/kraymer).  
+Don't forget to keep your packages documented using `f-dotfiles.py --doc` command.
 
 
 ## Rules
 
-> *Walter -* That rules really tie the repo together, do they not?  
+> *Walter -* That rules really tie the repo together, do they not?
 > *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>
 
 ### Documentation <sup><sub>[`f-dotfiles.py`](https://github.com/Kraymer/)
 
 Dotfiles repositories are too often grimoire-like collection of ancient formulas, only usable by their original author.
 
-F-dotfiles avoid this pitfall by paying special attention to packages documentation : run `pre-commit install` to enable [`f-dotfiles.py`](https://github.com/F-dotfiles/F-dotfiles/blob/master/docgen.py) hook that ensures that packages `README.md` tree listings are automatically updated when commiting.  
+F-dotfiles avoid this pitfall by paying special attention to packages documentation : run `pre-commit install` to enable [`f-dotfiles.py`](https://github.com/F-dotfiles/F-dotfiles/blob/master/docgen.py) hook that ensures that packages `README.md` tree listings are automatically updated when commiting.
 Files descriptions that match the format `# <filename>: description` are extracted too and enrich the tree listing.
 
-Others instructions like install notes and requirements should be manually entered by editing the `README.md` files directly, and can live peacefully alongside auto-generated tree view content. 
+Others instructions like install notes and requirements should be manually entered by editing the `README.md` files directly, and can live peacefully alongside auto-generated tree view content.
 
 ### Directories naming <sup><sub>[`.stow-global-ignore`](https://github.com/F-dotfiles/F-dotfiles/blob/master/stow/.stow-global-ignore#L7)
 
@@ -67,5 +64,5 @@ Because the secret file itself is not tracked, a template is commited instead ha
 
 
 ---
-<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [`.stowrc`](https://github.com/F-dotfiles/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)  
+<i id="f1">1</i> it's because we installed `stow` package at step 2 that the flag `-t ~` can be omitted here, see [`.stowrc`](https://github.com/F-dotfiles/F-dotfiles/blob/master/stow/.stowrc) [⤸](#a1)
 <i id="f2">2</i> https://www.youtube.com/watch?v=ezQLP1dj_t8 [⤸](#a2)

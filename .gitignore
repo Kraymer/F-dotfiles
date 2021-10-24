@@ -2,6 +2,5 @@
 !README.md
 .DS_Store
 .envrc
-.pre-commit-config.yaml
 .venv
 /bin/

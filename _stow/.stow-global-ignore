@@ -1,0 +1,9 @@
+# .stow-global-ignore: files for F-dotfiles framework that should be skipped
+
+.DS_Store
+.git
+.gitignore
+.stow-local-ignore
+.*.example
+^/@.*
+README.*

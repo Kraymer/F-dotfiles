@@ -1,0 +1,17 @@
+repos:
+-   repo: https://github.com/psf/black
+    rev: 21.9b0
+    hooks:
+    - id: black
+      language_version: python3
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+    -   id: flake8
+-   repo: local
+    hooks:
+    -   id: F-dotfiles
+        name: F-dotfiles
+        entry: ./F-dotfiles
+        language: python
+        pass_filenames: false

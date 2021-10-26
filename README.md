@@ -21,6 +21,8 @@ Great effort is put on self-documentation and ease of maintenance.
 
 ## Getting started
 
+This repository establishes guidelines to organize dotfiles for stow while keeping them well documented.  
+A basic knowledge of stow is a prerequisite, I suggest reading [Managing Dotfiles with GNU Stow](https://www.stevenrbaker.com/tech/managing-dotfiles-with-gnu-stow.html) for that purpose.
 
 ### Basic usage
 

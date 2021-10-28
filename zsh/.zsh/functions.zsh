@@ -25,12 +25,13 @@ function set-win-title () {
 # Prepend emoji on window title based on running command
 function preexec() {
   case $1 in
-    *py*)                 set-win-title "🐍 ${1}" ;;
+    *cp*|*rsync*|*scp*)   set-win-title "💾 ${1}" ;;
+    *docker*)             set-win-title "🐳 ${1}" ;;
     *gulp*)               set-win-title "🎨 ${1}" ;;
     *htop*)               set-win-title "🔋 ${1}" ;;
-    *ssh* )               set-win-title "🛰 ${1}" ;;
-    *release* )           set-win-title "🚀 ${1}" ;;
     *micro*|*nano* )      set-win-title "📝 ${1}" ;;
-    *rsync*|*cp*|*scp*)   set-win-title "💾 ${1}" ;;
+    *py*)                 set-win-title "🐍 ${1}" ;;
+    *release* )           set-win-title "🚀 ${1}" ;;
+    *ssh* )               set-win-title "🛰 ${1}" ;;
   esac
 }

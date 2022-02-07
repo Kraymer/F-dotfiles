@@ -1,3 +1,6 @@
 # Using direnv to sandbox a project's dependencies
 cd myproject
 echo "layout python" > .envrc
+
+# Delete *pyc files recursively
+find . -name \*.pyc -delete

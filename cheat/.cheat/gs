@@ -1,7 +1,0 @@
-# compress pdf file
-# -dPDFSETTINGS=configuration presets the "distiller parameters" to one of four predefined settings:
-#  /screen selects low-resolution output similar to the Acrobat Distiller "Screen Optimized" setting.
-#  /ebook selects medium-resolution output similar to the Acrobat Distiller "eBook" setting.
-#  /printer selects output similar to the Acrobat Distiller "Print Optimized" setting.
-# /prepress selects output similar to Acrobat Distiller "Prepress Optimized" setting.
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf

@@ -34,3 +34,13 @@ cpdf -compress in.pdf -o out.pdf
 # Decompress the data streams in in.pdf, writing to out.pdf.
 cpdf -decompress in.pdf -o out.pdf
 
+# compress pdf file
+# -dPDFSETTINGS=configuration presets the "distiller parameters" to one of four predefined settings:
+#  /screen selects low-resolution output similar to the Acrobat Distiller "Screen Optimized" setting.
+#  /ebook selects medium-resolution output similar to the Acrobat Distiller "eBook" setting.
+#  /printer selects output similar to the Acrobat Distiller "Print Optimized" setting.
+# /prepress selects output similar to Acrobat Distiller "Prepress Optimized" setting.
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
+
+# Convert pdf to n images (OSX)
+sips -s format png --out dest.png /Users/flap/Downloads/src.pdf

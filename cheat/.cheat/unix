@@ -1,5 +1,8 @@
-# Delete *pyc files recursively
-find . -name \*.pyc -delete
-
 # rsync copy with global progress indication
 rsync -ra --info=progress2 --no-i-r SRC TARGET
+
+# Skip 12 first columns
+cut -c 12-
+
+# Edit multiple filenames in text editor
+vidir <FILES>

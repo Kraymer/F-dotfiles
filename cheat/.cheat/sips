@@ -1,2 +1,0 @@
-# Convert pdf to n images
-sips -s format png --out dest.png /Users/flap/Downloads/src.pdf

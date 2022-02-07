@@ -23,7 +23,7 @@ git log --follow filename
 git log -p feature --not master
 git diff master...feature
 
-# Interactive rebase for the last 7 commits
+# Interactive rebase for the last 7 commits (rewrite history)
 git rebase -i @~7
 
 # Delete all remote branches that have been merged

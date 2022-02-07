@@ -6,6 +6,7 @@
 
 [alias]
     st = status
+    co = checkout
 [color]
     diff = auto
     status = auto

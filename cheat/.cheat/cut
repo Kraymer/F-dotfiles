@@ -1,2 +1,0 @@
-# Skip 12 first columns
-cut -c 12-

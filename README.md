@@ -33,15 +33,10 @@ When needed, special install instructions are present in package `README.md` fil
 
 Dotfiles repositories are too often grimoire-like collection of ancient formulas, only usable by their original author.
 
-F-dotfiles avoid this pitfall by paying special attention to packages documentation : run `pre-commit install` to enable [`f-dotfiles.py`](https://github.com/F-dotfiles/F-dotfiles/blob/master/docgen.py) hook that ensures that packages `README.md` tree listings are automatically updated when commiting.  
+F-dotfiles avoid this pitfall by paying special attention to packages documentation : run `pre-commit install` to enable [`f-dotfiles.py`](https://github.com/Kraymer/F-dotfiles/blob/master/f-dotfiles.py) hook that ensures that packages `README.md` tree listings are automatically updated when commiting.  
 Files descriptions that match the format `# <filename>: description` are extracted too and enrich the tree listing.
 
 Others instructions like install notes and requirements should be manually entered by editing the `README.md` files directly, and can live peacefully alongside auto-generated tree view content. 
-
-### Directories naming <sup><sub>[`.stow-global-ignore`](https://github.com/F-dotfiles/F-dotfiles/blob/master/stow/.stow-global-ignore#L7)
-
-Use a leading `@` for platform-specific packages (eg
-  [`@mac`](https://github.com/F-dotfiles/F-dotfiles/blob/master/%40mac/)) so that such-named packages are not automatically symlinked when stowing parent package.
 
 ### Ignore files <sup><sub>[[cf example]](https://github.com/F-dotfiles/F-dotfiles/blob/master/_sublime_text_3/.gitignore)</sub></sup>
 

@@ -7,19 +7,12 @@ My preferences and packages to install with their settings.
     ├── _common
     │   └── Packages
     │       └── User
-    │           ├── Default (Linux).sublime-mousemap
     │           ├── Flake8Lint.sublime-settings
     │           ├── GitGutter.sublime-settings
     │           ├── Markdown.sublime-settings
-    │           ├── Monokai (Flake8Lint).tmTheme
     │           ├── Package Control.sublime-settings
     │           ├── pep8_autoformat.sublime-settings
     │           └── Preferences.sublime-settings
-    ├── @linux
-    │   └── .config
-    │       └── sublime-text-3
-    │           └── Packages
-    │               └── User -> ../../../../_common/Packages/User
     └── @osx
         └── Library
             └── Application Support

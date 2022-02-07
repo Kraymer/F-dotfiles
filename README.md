@@ -1,7 +1,3 @@
-[![][patreon]](https://www.patreon.com/kraymer)
-
-[patreon]: https://img.shields.io/badge/-%E2%99%A1%20Donate%20-ff69b4
-
 ![F-dotfiles banner](https://raw.githubusercontent.com/F-dotfiles/F-dotfiles/master/.github/img/banner.png)
 
 # F-dotfiles
@@ -33,7 +29,7 @@ When needed, special install instructions are present in package `README.md` fil
 > *Walter -* That rules really tie the repo together, do they not?  
 > *The Dude -* Fuckin A ! <sup id="a2">[2](#f2)</sup>
 
-### Documentation <sup><sub>[`f-dotfiles.py`](https://github.com/Kraymer/)
+### Documentation <sup><sub>[`f-dotfiles.py`](https://github.com/Kraymer/F-dotfiles/F-dotfiles/blob/master/f-dotfiles.py)
 
 Dotfiles repositories are too often grimoire-like collection of ancient formulas, only usable by their original author.
 

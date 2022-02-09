@@ -1,2 +1,8 @@
 # Lister les images
 docker images
+
+# kill all running docker containers
+docker kill $(docker container ls -q)
+
+# docker attach to specific image
+docker attach $(docker ps -qf "name=image_name")

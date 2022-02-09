@@ -19,6 +19,9 @@
     │   ├── tmux
     │   ├── unix
     │   └── zsh
+    ├── .config
+    │   └── cheat
+    │       └── conf.yml
     └── .zsh
         └── cheat.zsh
 

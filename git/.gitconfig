@@ -2,6 +2,11 @@
 [include]
     path = ~/.config/git/credentials
 
+[core]
+    editor = nano
+    excludesfile = ~/.gitignore
+    pager = delta
+
 # From there, sections are in alphabetic order
 
 [alias]
@@ -11,18 +16,12 @@
     diff = auto
     status = auto
     branch = auto
-	ui = true
+    ui = true
 [help]
     autocorrect = 1
 [init]
     templateDir = ~/.config/git/templates
-[core]
-    editor = nano
-    excludesfile = ~/.gitignore
-[color]
-    diff = auto
-    status = auto
-    branch = auto
-	ui = true
+[interactive]
+    diffFilter = delta --color-only --features=interactive
 [pull]
-	rebase = false
+    rebase = false

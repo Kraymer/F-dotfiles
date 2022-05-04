@@ -9,8 +9,6 @@ if [ -n "$stash" ]; then
     echo "🔍 Found code stashed on top of current commit"
     git stash show $stash
     echo ""
-    #echo "Apply with"
-    #echo "   git stash apply $stash"
     read -t 3 -n1 -p "👉 Apply $stash [y/N]? " doit < /dev/tty
     case $doit in
       [yY]* ) git stash apply $stash

@@ -47,3 +47,6 @@ git log --first-parent --no-merges
 
 # Select git branches to delete interactively
 git branch -D $(git branch --merged | percol | awk '{print $1;}')
+
+# Rename current local branch
+git branch -m <newname>

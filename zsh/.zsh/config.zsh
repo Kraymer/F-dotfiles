@@ -9,6 +9,7 @@ _comp_options+=(globdots)	# auto-complete dot files
 eval `dircolors ~/.zsh/dircolors.256dark`	# colored ls
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export VISUAL=nano        # for vidir
 
 # History
 HISTFILE=~/.zsh_history

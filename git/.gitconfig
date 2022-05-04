@@ -25,3 +25,5 @@
     diffFilter = delta --color-only --features=interactive
 [pull]
     rebase = false
+[checkout]
+     defaultRemote = origin

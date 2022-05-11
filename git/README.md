@@ -16,4 +16,5 @@
 
 ### Requirements
 
-`diff-so-fancy` <<https://github.com/so-fancy/diff-so-fancy/>>
+- `delta` <<https://github.com/dandavison/delta>>
+- `git-trim` <<https://github.com/jasonmccreary/git-trim>>

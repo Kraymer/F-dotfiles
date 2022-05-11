@@ -10,7 +10,7 @@
     │       ├── credentials.example 	# 🔏 User credentials
     │       └── templates
     │           └── hooks
-    │               └── post-checkout 	# mention code previously staged from current branch
+    │               └── post-checkout 	# prompt user to apply code previously stashed from target branch
     └── .gitconfig
 
 

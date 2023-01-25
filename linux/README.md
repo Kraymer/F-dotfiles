@@ -31,3 +31,8 @@ sudo apt install pinta solaar
 - `gpaste`: clipboard management suite for GNOME
 - `pinta` : open source program for drawing and image editing
 - `solaar`: Linux Device Manager for Logitech Unifying Receivers and Devices
+
+### Note
+
+Ubuntu 22.04 put you by default on the Wayland server, where Xmodmap (and others classical tools for Xorg) do not anymore work.
+You can switch to Xorg again by logging out, then before entering your password, clicking the cog wheel to select the "Ubuntu on xorg" session. That choice is remembered until you change it again.

@@ -50,3 +50,6 @@ git branch -D $(git branch --merged | percol | awk '{print $1;}')
 
 # Rename current local branch
 git branch -m <newname>
+
+# Reset branch to origin remote version
+git reset --hard @{u}  # @{u} is a shortcut for whatever your tracking branch is

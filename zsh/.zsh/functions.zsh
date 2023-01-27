@@ -30,8 +30,10 @@ function preexec() {
     *gulp*)               set-win-title "🎨 ${1}" ;;
     *htop*)               set-win-title "🔋 ${1}" ;;
     *micro*|*nano* )      set-win-title "📝 ${1}" ;;
+    *pawn* )              set-win-title "♟️️${1}" ;;
     *py*)                 set-win-title "🐍 ${1}" ;;
     *release* )           set-win-title "🚀 ${1}" ;;
     *ssh* )               set-win-title "🛰 ${1}" ;;
+    *)                    set-win-title "${1}" ;;
   esac
 }

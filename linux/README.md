@@ -2,6 +2,7 @@
 
 
 <!--- Tree block injection -->
+    ├── .profile
     ├── .Xmodmap
     └── .zsh
         └── linux.zsh

@@ -24,6 +24,8 @@ sudo apt-get update
 sudo apt-get install gnome-shell-extensions-gpaste
     
 sudo apt install pinta solaar
+
+sudo apt install gnome-tweaks
 ```
 
 </p>
@@ -32,6 +34,7 @@ sudo apt install pinta solaar
 - `gpaste`: clipboard management suite for GNOME
 - `pinta` : open source program for drawing and image editing
 - `solaar`: Linux Device Manager for Logitech Unifying Receivers and Devices
+- `gnome-tweaks`: advanced touchpad configuration
 
 ### Note
 

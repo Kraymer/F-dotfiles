@@ -1,0 +1,17 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/webcal=google-chrome.desktop
+x-scheme-handler/mailto=google-chrome.desktop
+
+[Added Associations]
+audio/mpeg=rhythmbox.desktop;spotify_spotify.desktop;
+image/png=shutter.desktop;google-chrome.desktop;pinta.desktop;
+application/pdf=okular_okular.desktop;
+application/x-cd-image=gnome-disk-image-writer.desktop;
+image/jpeg=shotwell.desktop;shutter.desktop;
+video/mp4=shotwell-viewer.desktop;
+application/octet-stream=google-chrome.desktop;

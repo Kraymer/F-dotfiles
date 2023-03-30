@@ -2,6 +2,9 @@
 
 
 <!--- Tree block injection -->
+    ├── .bash_profile 	# bash startup script
+    ├── .config
+    │   └── mimeapps.list
     ├── .profile
     ├── .Xmodmap
     └── .zsh

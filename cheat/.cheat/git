@@ -53,3 +53,6 @@ git branch -m <newname>
 
 # Reset branch to origin remote version
 git reset --hard @{u}  # @{u} is a shortcut for whatever your tracking branch is
+
+# Reset local changes
+git checkout -f

@@ -2,8 +2,8 @@
 
 
 <!--- Tree block injection -->
-    ├── .bash_profile 	# bash startup script
     ├── .config
+    │   ├── crontab
     │   └── mimeapps.list
     ├── .profile
     ├── .Xmodmap

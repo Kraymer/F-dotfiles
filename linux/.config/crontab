@@ -24,3 +24,4 @@
 # 
 # m h  dom mon dow   command
 @reboot xmodmap /home/flap/.Xmodmap
+0 * * * * xmodmap /home/flap/.Xmodmap
